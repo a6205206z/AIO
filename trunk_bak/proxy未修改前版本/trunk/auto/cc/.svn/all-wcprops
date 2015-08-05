@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/auto/cc
+END
+name
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/auto/cc/name
+END
+clang
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/auto/cc/clang
+END
+conf
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/auto/cc/conf
+END
+acc
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/auto/cc/acc
+END
+bcc
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/auto/cc/bcc
+END
+ccc
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/auto/cc/ccc
+END
+msvc
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/auto/cc/msvc
+END
+owc
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/auto/cc/owc
+END
+sunc
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/auto/cc/sunc
+END
+gcc
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/auto/cc/gcc
+END
+icc
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/auto/cc/icc
+END

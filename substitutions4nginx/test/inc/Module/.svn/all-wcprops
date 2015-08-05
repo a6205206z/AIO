@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/319945/SOA/ESB/substitutions4nginx/test/inc/Module
+END
+Install.pm
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/319945/SOA/ESB/substitutions4nginx/test/inc/Module/Install.pm
+END
+AutoInstall.pm
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/319945/SOA/ESB/substitutions4nginx/test/inc/Module/AutoInstall.pm
+END

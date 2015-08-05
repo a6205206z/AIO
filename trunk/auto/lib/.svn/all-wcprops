@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/lib
+END
+test
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/lib/test
+END
+conf
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/lib/conf
+END
+make
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/lib/make
+END

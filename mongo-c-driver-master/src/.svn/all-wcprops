@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/src
+END
+bson.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/src/bson.c
+END
+bson.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/src/bson.h
+END
+env_standard.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/320363/SOA/ESB/mongo-c-driver-master/src/env_standard.c
+END
+env_posix.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/320363/SOA/ESB/mongo-c-driver-master/src/env_posix.c
+END
+env_win32.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/320363/SOA/ESB/mongo-c-driver-master/src/env_win32.c
+END
+numbers.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/320363/SOA/ESB/mongo-c-driver-master/src/numbers.c
+END
+gridfs.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/src/gridfs.c
+END
+mongo.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/src/mongo.c
+END
+bcon.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/src/bcon.c
+END
+gridfs.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/src/gridfs.h
+END
+mongo.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/src/mongo.h
+END
+md5.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/src/md5.c
+END
+bcon.h
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/src/bcon.h
+END
+encoding.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/src/encoding.c
+END
+env.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/src/env.c
+END
+md5.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/src/md5.h
+END
+encoding.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/src/encoding.h
+END
+env.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/src/env.h
+END

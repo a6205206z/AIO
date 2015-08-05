@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/auto/os
+END
+linux
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/auto/os/linux
+END
+win32
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/auto/os/win32
+END
+darwin
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/auto/os/darwin
+END
+conf
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/auto/os/conf
+END
+freebsd
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/auto/os/freebsd
+END
+solaris
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/auto/os/solaris
+END

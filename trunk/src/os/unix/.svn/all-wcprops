@@ -1,0 +1,431 @@
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/363661/SOA/ESB/trunk/src/os/unix
+END
+ngx_linux_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_linux_init.c
+END
+ngx_aio_write.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_aio_write.c
+END
+ngx_recv.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_recv.c
+END
+ngx_file_aio_read.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_file_aio_read.c
+END
+ngx_udp_recv.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_udp_recv.c
+END
+ngx_linux_sendfile_chain.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_linux_sendfile_chain.c
+END
+ngx_thread.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_thread.h
+END
+rfork_thread.S
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/rfork_thread.S
+END
+ngx_freebsd.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_freebsd.h
+END
+ngx_linux_aio_read.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_linux_aio_read.c
+END
+ngx_writev_chain.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_writev_chain.c
+END
+ngx_setaffinity.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_setaffinity.c
+END
+ngx_posix_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_posix_init.c
+END
+ngx_errno.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_errno.c
+END
+ngx_freebsd_sendfile_chain.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_freebsd_sendfile_chain.c
+END
+ngx_socket.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_socket.c
+END
+ngx_gcc_atomic_amd64.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_gcc_atomic_amd64.h
+END
+ngx_sunpro_atomic_sparc64.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_sunpro_atomic_sparc64.h
+END
+ngx_setaffinity.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_setaffinity.h
+END
+ngx_errno.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_errno.h
+END
+ngx_alloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_alloc.c
+END
+ngx_posix_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_posix_config.h
+END
+ngx_socket.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_socket.h
+END
+ngx_process_cycle.c
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/363661/SOA/ESB/trunk/src/os/unix/ngx_process_cycle.c
+END
+ngx_darwin_sendfile_chain.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_darwin_sendfile_chain.c
+END
+ngx_alloc.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_alloc.h
+END
+ngx_gcc_atomic_sparc64.h
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_gcc_atomic_sparc64.h
+END
+ngx_process_cycle.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_process_cycle.h
+END
+ngx_linux.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_linux.h
+END
+ngx_channel.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_channel.c
+END
+ngx_sunpro_sparc64.il
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_sunpro_sparc64.il
+END
+ngx_sunpro_x86.il
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_sunpro_x86.il
+END
+ngx_channel.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_channel.h
+END
+ngx_process.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_process.c
+END
+ngx_user.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_user.c
+END
+ngx_setproctitle.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_setproctitle.c
+END
+ngx_process.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_process.h
+END
+ngx_user.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_user.h
+END
+ngx_setproctitle.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_setproctitle.h
+END
+ngx_os.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_os.h
+END
+ngx_send.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_send.c
+END
+ngx_linux_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_linux_config.h
+END
+ngx_freebsd_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_freebsd_init.c
+END
+ngx_time.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_time.c
+END
+ngx_solaris_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_solaris_init.c
+END
+ngx_files.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_files.c
+END
+ngx_gcc_atomic_x86.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_gcc_atomic_x86.h
+END
+ngx_sunpro_amd64.il
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_sunpro_amd64.il
+END
+ngx_readv_chain.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_readv_chain.c
+END
+ngx_aio_read.c
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_aio_read.c
+END
+ngx_time.h
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_time.h
+END
+ngx_freebsd_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_freebsd_config.h
+END
+ngx_solaris_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_solaris_config.h
+END
+ngx_darwin_init.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_darwin_init.c
+END
+ngx_files.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_files.h
+END
+ngx_solaris_sendfilev_chain.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_solaris_sendfilev_chain.c
+END
+ngx_darwin_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_darwin_config.h
+END
+ngx_solaris.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_solaris.h
+END
+ngx_atomic.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_atomic.h
+END
+ngx_aio_write_chain.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_aio_write_chain.c
+END
+ngx_darwin.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_darwin.h
+END
+ngx_esb_cpuinfo.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/326263/SOA/ESB/trunk/src/os/unix/ngx_esb_cpuinfo.c
+END
+ngx_gcc_atomic_ppc.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_gcc_atomic_ppc.h
+END
+ngx_esb_cpuinfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/326247/SOA/ESB/trunk/src/os/unix/ngx_esb_cpuinfo.h
+END
+ngx_daemon.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_daemon.c
+END
+ngx_freebsd_rfork_thread.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_freebsd_rfork_thread.c
+END
+ngx_aio_read_chain.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_aio_read_chain.c
+END
+ngx_shmem.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_shmem.c
+END
+ngx_freebsd_rfork_thread.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_freebsd_rfork_thread.h
+END
+ngx_shmem.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_shmem.h
+END
+ngx_pthread_thread.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/os/unix/ngx_pthread_thread.c
+END

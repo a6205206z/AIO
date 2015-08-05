@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/321164/SOA/ESB/trunk/src/http/modules/perl
+END
+typemap
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/perl/typemap
+END
+ngx_http_perl_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/perl/ngx_http_perl_module.c
+END
+Makefile.PL
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/perl/Makefile.PL
+END
+ngx_http_perl_module.h
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/perl/ngx_http_perl_module.h
+END
+nginx.xs
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/perl/nginx.xs
+END
+nginx.pm
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/321164/SOA/ESB/trunk/src/http/modules/perl/nginx.pm
+END

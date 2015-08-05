@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/event/modules
+END
+ngx_kqueue_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/event/modules/ngx_kqueue_module.c
+END
+ngx_select_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/event/modules/ngx_select_module.c
+END
+ngx_win32_select_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/event/modules/ngx_win32_select_module.c
+END
+ngx_devpoll_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/event/modules/ngx_devpoll_module.c
+END
+ngx_eventport_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/event/modules/ngx_eventport_module.c
+END
+ngx_poll_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/event/modules/ngx_poll_module.c
+END
+ngx_aio_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/event/modules/ngx_aio_module.c
+END
+ngx_rtsig_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/event/modules/ngx_rtsig_module.c
+END
+ngx_epoll_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/event/modules/ngx_epoll_module.c
+END

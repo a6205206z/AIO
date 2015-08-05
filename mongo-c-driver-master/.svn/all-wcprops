@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master
+END
+RELEASE.md
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/RELEASE.md
+END
+HISTORY.md
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/HISTORY.md
+END
+runtests.sh
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/320363/SOA/ESB/mongo-c-driver-master/runtests.sh
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/LICENSE
+END
+doxygenConfig
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/doxygenConfig
+END
+.astylerc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/320363/SOA/ESB/mongo-c-driver-master/.astylerc
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/.gitignore
+END
+CONTRIBUTING.md
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/320363/SOA/ESB/mongo-c-driver-master/CONTRIBUTING.md
+END
+SConstruct
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/SConstruct
+END
+check_int64.sh
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/320363/SOA/ESB/mongo-c-driver-master/check_int64.sh
+END
+APACHE-2.0.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/320363/SOA/ESB/mongo-c-driver-master/APACHE-2.0.txt
+END
+README.md
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/README.md
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/Makefile
+END

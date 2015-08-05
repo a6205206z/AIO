@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/html/templates/partials
+END
+header-menu.mustache
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/html/templates/partials/header-menu.mustache
+END
+charms.mustache
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/html/templates/partials/charms.mustache
+END
+logged-user.mustache
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/html/templates/partials/logged-user.mustache
+END

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+
+  <wsdl:types>
+
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+
+      <s:element name="GetUserNames">
+
+        <s:complexType>
+
+          <s:sequence>
+
+            <s:element minOccurs="0" maxOccurs="1" name="userIds" type="tns:ArrayOfInt"/>
+
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string"/>
+
+          </s:sequence>
+
+        </s:complexType>
+
+      </s:element>
+
+      <s:complexType name="ArrayOfInt">
+
+        <s:sequence>
+
+          <s:element minOccurs="0" maxOccurs="unbounded" name="int" type="s:int"/>
+
+        </s:sequence>
+
+      </s:complexType>
+
+      <s:element name="GetUserNamesResponse">
+
+        <s:complexType>
+
+          <s:sequence>
+
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserNamesResult" type="tns:ArrayOfUserNameInfo"/>
+
+          </s:sequence>
+
+        </s:complexType>
+
+      </s:element>
+
+      <s:complexType name="ArrayOfUserNameInfo">
+
+        <s:sequence>
+
+          <s:element minOccurs="0" maxOccurs="unbounded" name="UserNameInfo" nillable="true" type="tns:UserNameInfo"/>
+
+        </s:sequence>
+
+      </s:complexType>
+
+      <s:complexType name="UserNameInfo">
+
+        <s:sequence>
+
+          <s:element minOccurs="1" maxOccurs="1" name="UserId" type="s:int"/>
+
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string"/>
+
+        </s:sequence>
+
+      </s:complexType>
+
+      <s:element name="GetUserName">
+
+        <s:complexType>
+
+          <s:sequence>
+
+            <s:element minOccurs="1" maxOccurs="1" name="userId" type="s:int"/>
+
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string"/>
+
+          </s:sequence>
+
+        </s:complexType>
+
+      </s:element>
+
+      <s:element name="GetUserNameResponse">
+
+        <s:complexType>
+
+          <s:sequence>
+
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserNameResult" type="s:string"/>
+
+          </s:sequence>
+
+        </s:complexType>
+
+      </s:element>
+
+      <s:element name="QueryUserIsInBlackList">
+
+        <s:complexType>
+
+          <s:sequence>
+
+            <s:element minOccurs="0" maxOccurs="1" name="UserIds" type="tns:ArrayOfInt"/>
+
+            <s:element minOccurs="0" maxOccurs="1" name="key" type="s:string"/>
+
+          </s:sequence>
+
+        </s:complexType>
+
+      </s:element>
+
+      <s:element name="QueryUserIsInBlackListResponse">
+
+        <s:complexType>
+
+          <s:sequence>
+
+            <s:element minOccurs="0" maxOccurs="1" name="QueryUserIsInBlackListResult" type="tns:ArrayOfUserIsInBlack"/>
+
+          </s:sequence>
+
+        </s:complexType>
+
+      </s:element>
+
+      <s:complexType name="ArrayOfUserIsInBlack">
+
+        <s:sequence>
+
+          <s:element minOccurs="0" maxOccurs="unbounded" name="UserIsInBlack" nillable="true" type="tns:UserIsInBlack"/>
+
+        </s:sequence>
+
+      </s:complexType>
+
+      <s:complexType name="UserIsInBlack">
+
+        <s:sequence>
+
+          <s:element minOccurs="1" maxOccurs="1" name="UserID" type="s:int"/>
+
+          <s:element minOccurs="1" maxOccurs="1" name="IsInBlack" type="s:boolean"/>
+
+        </s:sequence>
+
+      </s:complexType>
+
+    </s:schema>
+
+  </wsdl:types>
+
+  <wsdl:message name="GetUserNamesSoapIn">
+
+    <wsdl:part name="parameters" element="tns:GetUserNames"/>
+
+  </wsdl:message>
+
+  <wsdl:message name="GetUserNamesSoapOut">
+
+    <wsdl:part name="parameters" element="tns:GetUserNamesResponse"/>
+
+  </wsdl:message>
+
+  <wsdl:message name="GetUserNameSoapIn">
+
+    <wsdl:part name="parameters" element="tns:GetUserName"/>
+
+  </wsdl:message>
+
+  <wsdl:message name="GetUserNameSoapOut">
+
+    <wsdl:part name="parameters" element="tns:GetUserNameResponse"/>
+
+  </wsdl:message>
+
+  <wsdl:message name="QueryUserIsInBlackListSoapIn">
+
+    <wsdl:part name="parameters" element="tns:QueryUserIsInBlackList"/>
+
+  </wsdl:message>
+
+  <wsdl:message name="QueryUserIsInBlackListSoapOut">
+
+    <wsdl:part name="parameters" element="tns:QueryUserIsInBlackListResponse"/>
+
+  </wsdl:message>
+
+  <wsdl:portType name="NewAssessServiceSubCustWSSoap">
+
+    <wsdl:operation name="GetUserNames">
+
+      <wsdl:input message="tns:GetUserNamesSoapIn"/>
+
+      <wsdl:output message="tns:GetUserNamesSoapOut"/>
+
+    </wsdl:operation>
+
+    <wsdl:operation name="GetUserName">
+
+      <wsdl:input message="tns:GetUserNameSoapIn"/>
+
+      <wsdl:output message="tns:GetUserNameSoapOut"/>
+
+    </wsdl:operation>
+
+    <wsdl:operation name="QueryUserIsInBlackList">
+
+      <wsdl:input message="tns:QueryUserIsInBlackListSoapIn"/>
+
+      <wsdl:output message="tns:QueryUserIsInBlackListSoapOut"/>
+
+    </wsdl:operation>
+
+  </wsdl:portType>
+
+  <wsdl:binding name="NewAssessServiceSubCustWSSoap" type="tns:NewAssessServiceSubCustWSSoap">
+
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+
+    <wsdl:operation name="GetUserNames">
+
+      <soap:operation soapAction="http://tempuri.org/GetUserNames" style="document"/>
+
+      <wsdl:input>
+
+        <soap:body use="literal"/>
+
+      </wsdl:input>
+
+      <wsdl:output>
+
+        <soap:body use="literal"/>
+
+      </wsdl:output>
+
+    </wsdl:operation>
+
+    <wsdl:operation name="GetUserName">
+
+      <soap:operation soapAction="http://tempuri.org/GetUserName" style="document"/>
+
+      <wsdl:input>
+
+        <soap:body use="literal"/>
+
+      </wsdl:input>
+
+      <wsdl:output>
+
+        <soap:body use="literal"/>
+
+      </wsdl:output>
+
+    </wsdl:operation>
+
+    <wsdl:operation name="QueryUserIsInBlackList">
+
+      <soap:operation soapAction="http://tempuri.org/QueryUserIsInBlackList" style="document"/>
+
+      <wsdl:input>
+
+        <soap:body use="literal"/>
+
+      </wsdl:input>
+
+      <wsdl:output>
+
+        <soap:body use="literal"/>
+
+      </wsdl:output>
+
+    </wsdl:operation>
+
+  </wsdl:binding>
+
+  <wsdl:binding name="NewAssessServiceSubCustWSSoap12" type="tns:NewAssessServiceSubCustWSSoap">
+
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+
+    <wsdl:operation name="GetUserNames">
+
+      <soap12:operation soapAction="http://tempuri.org/GetUserNames" style="document"/>
+
+      <wsdl:input>
+
+        <soap12:body use="literal"/>
+
+      </wsdl:input>
+
+      <wsdl:output>
+
+        <soap12:body use="literal"/>
+
+      </wsdl:output>
+
+    </wsdl:operation>
+
+    <wsdl:operation name="GetUserName">
+
+      <soap12:operation soapAction="http://tempuri.org/GetUserName" style="document"/>
+
+      <wsdl:input>
+
+        <soap12:body use="literal"/>
+
+      </wsdl:input>
+
+      <wsdl:output>
+
+        <soap12:body use="literal"/>
+
+      </wsdl:output>
+
+    </wsdl:operation>
+
+    <wsdl:operation name="QueryUserIsInBlackList">
+
+      <soap12:operation soapAction="http://tempuri.org/QueryUserIsInBlackList" style="document"/>
+
+      <wsdl:input>
+
+        <soap12:body use="literal"/>
+
+      </wsdl:input>
+
+      <wsdl:output>
+
+        <soap12:body use="literal"/>
+
+      </wsdl:output>
+
+    </wsdl:operation>
+
+  </wsdl:binding>
+
+  <wsdl:service name="NewAssessServiceSubCustWS">
+
+    <wsdl:port name="NewAssessServiceSubCustWSSoap" binding="tns:NewAssessServiceSubCustWSSoap">
+
+      <soap:address location="http://esb.vancldb.com/esbmerge_qEV3Ib"/>
+
+    </wsdl:port>
+
+    <wsdl:port name="NewAssessServiceSubCustWSSoap12" binding="tns:NewAssessServiceSubCustWSSoap12">
+
+      <soap12:address location="http://esb.vancldb.com/esbmerge_qEV3Ib"/>
+
+    </wsdl:port>
+
+  </wsdl:service>
+
+</wsdl:definitions>

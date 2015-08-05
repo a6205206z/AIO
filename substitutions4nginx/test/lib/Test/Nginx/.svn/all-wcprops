@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/319945/SOA/ESB/substitutions4nginx/test/lib/Test/Nginx
+END
+Socket.pm
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/!svn/ver/319945/SOA/ESB/substitutions4nginx/test/lib/Test/Nginx/Socket.pm
+END
+Util.pm
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/319945/SOA/ESB/substitutions4nginx/test/lib/Test/Nginx/Util.pm
+END
+LWP.pm
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/319945/SOA/ESB/substitutions4nginx/test/lib/Test/Nginx/LWP.pm
+END

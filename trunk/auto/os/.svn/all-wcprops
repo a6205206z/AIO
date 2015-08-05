@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/os
+END
+linux
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/os/linux
+END
+win32
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/os/win32
+END
+darwin
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/os/darwin
+END
+conf
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/os/conf
+END
+freebsd
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/os/freebsd
+END
+solaris
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/os/solaris
+END

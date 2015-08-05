@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/event/modules
+END
+ngx_kqueue_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/event/modules/ngx_kqueue_module.c
+END
+ngx_select_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/event/modules/ngx_select_module.c
+END
+ngx_win32_select_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/event/modules/ngx_win32_select_module.c
+END
+ngx_devpoll_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/event/modules/ngx_devpoll_module.c
+END
+ngx_eventport_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/event/modules/ngx_eventport_module.c
+END
+ngx_poll_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/event/modules/ngx_poll_module.c
+END
+ngx_aio_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/event/modules/ngx_aio_module.c
+END
+ngx_rtsig_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/event/modules/ngx_rtsig_module.c
+END
+ngx_epoll_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/event/modules/ngx_epoll_module.c
+END

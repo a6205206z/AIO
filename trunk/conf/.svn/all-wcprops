@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svn/!svn/ver/358395/SOA/ESB/trunk/conf
+END
+locations.conf
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/355509/SOA/ESB/trunk/conf/locations.conf
+END
+fastcgi_params
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/319875/SOA/ESB/trunk/conf/fastcgi_params
+END
+uwsgi_params.default
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/319875/SOA/ESB/trunk/conf/uwsgi_params.default
+END
+fastcgi.conf.default
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/319875/SOA/ESB/trunk/conf/fastcgi.conf.default
+END
+scgi_params
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/319875/SOA/ESB/trunk/conf/scgi_params
+END
+win-utf
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/319875/SOA/ESB/trunk/conf/win-utf
+END
+nginx.conf.default
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/350655/SOA/ESB/trunk/conf/nginx.conf.default
+END
+mime.types
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/319875/SOA/ESB/trunk/conf/mime.types
+END
+fcgi.conf
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/319875/SOA/ESB/trunk/conf/fcgi.conf
+END
+uwsgi_params
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/319875/SOA/ESB/trunk/conf/uwsgi_params
+END
+esb_merge_location.conf
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/358376/SOA/ESB/trunk/conf/esb_merge_location.conf
+END
+esb_monitor.conf
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/355509/SOA/ESB/trunk/conf/esb_monitor.conf
+END
+fastcgi.conf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/319875/SOA/ESB/trunk/conf/fastcgi.conf
+END
+nagios.conf
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/350655/SOA/ESB/trunk/conf/nagios.conf
+END
+proxy.conf
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/358262/SOA/ESB/trunk/conf/proxy.conf
+END
+fastcgi_params.default
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/319875/SOA/ESB/trunk/conf/fastcgi_params.default
+END
+nginx.conf
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/352423/SOA/ESB/trunk/conf/nginx.conf
+END
+status.conf
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/350655/SOA/ESB/trunk/conf/status.conf
+END
+monitor.conf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/351367/SOA/ESB/trunk/conf/monitor.conf
+END
+scgi_params.default
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/319875/SOA/ESB/trunk/conf/scgi_params.default
+END
+upstreamserver.conf
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/358376/SOA/ESB/trunk/conf/upstreamserver.conf
+END
+esb_merge_address_list.conf
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/353766/SOA/ESB/trunk/conf/esb_merge_address_list.conf
+END
+mime.types.default
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/319875/SOA/ESB/trunk/conf/mime.types.default
+END
+log_format.conf
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/319875/SOA/ESB/trunk/conf/log_format.conf
+END
+koi-win
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/319875/SOA/ESB/trunk/conf/koi-win
+END
+servers.conf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/358395/SOA/ESB/trunk/conf/servers.conf
+END
+koi-utf
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/319875/SOA/ESB/trunk/conf/koi-utf
+END

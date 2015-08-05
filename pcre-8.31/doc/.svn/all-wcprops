@@ -1,0 +1,323 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc
+END
+pcre_get_stringtable_entries.3
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre_get_stringtable_entries.3
+END
+pcrestack.3
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcrestack.3
+END
+pcre_study.3
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre_study.3
+END
+pcre_compile2.3
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre_compile2.3
+END
+pcreapi.3
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcreapi.3
+END
+pcre_get_substring.3
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre_get_substring.3
+END
+pcre.3
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre.3
+END
+pcre_free_substring.3
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre_free_substring.3
+END
+pcresample.3
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcresample.3
+END
+pcre_get_named_substring.3
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre_get_named_substring.3
+END
+pcrecpp.3
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcrecpp.3
+END
+pcre_exec.3
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre_exec.3
+END
+pcre_jit_stack_alloc.3
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre_jit_stack_alloc.3
+END
+pcre16.3
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre16.3
+END
+pcreunicode.3
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcreunicode.3
+END
+pcre_compile.3
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre_compile.3
+END
+pcretest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcretest.txt
+END
+pcre-config.txt
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre-config.txt
+END
+pcre_config.3
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre_config.3
+END
+perltest.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/perltest.txt
+END
+pcre_maketables.3
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre_maketables.3
+END
+pcre_free_study.3
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre_free_study.3
+END
+pcre_get_substring_list.3
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre_get_substring_list.3
+END
+pcre_copy_substring.3
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre_copy_substring.3
+END
+pcregrep.txt
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcregrep.txt
+END
+pcreperform.3
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcreperform.3
+END
+pcre_jit_stack_free.3
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre_jit_stack_free.3
+END
+pcre_free_substring_list.3
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre_free_substring_list.3
+END
+pcrepattern.3
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcrepattern.3
+END
+pcre_get_stringnumber.3
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre_get_stringnumber.3
+END
+pcre_fullinfo.3
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre_fullinfo.3
+END
+pcre_copy_named_substring.3
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre_copy_named_substring.3
+END
+pcretest.1
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcretest.1
+END
+pcre_assign_jit_stack.3
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre_assign_jit_stack.3
+END
+pcre-config.1
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre-config.1
+END
+pcre_utf16_to_host_byte_order.3
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre_utf16_to_host_byte_order.3
+END
+pcrecompat.3
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcrecompat.3
+END
+pcre_version.3
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre_version.3
+END
+pcre_refcount.3
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre_refcount.3
+END
+index.html.src
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/index.html.src
+END
+pcrejit.3
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcrejit.3
+END
+pcresyntax.3
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcresyntax.3
+END
+pcre_pattern_to_host_byte_order.3
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre_pattern_to_host_byte_order.3
+END
+pcrematching.3
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcrematching.3
+END
+pcregrep.1
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcregrep.1
+END
+pcre.txt
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre.txt
+END
+pcrepartial.3
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcrepartial.3
+END
+pcre_dfa_exec.3
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcre_dfa_exec.3
+END
+pcrebuild.3
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcrebuild.3
+END
+pcreprecompile.3
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcreprecompile.3
+END
+pcrelimits.3
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcrelimits.3
+END
+pcreposix.3
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcreposix.3
+END
+pcrecallout.3
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/doc/pcrecallout.3
+END

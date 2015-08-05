@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/lib/pcre
+END
+makefile.bcc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/lib/pcre/makefile.bcc
+END
+makefile.msvc
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/lib/pcre/makefile.msvc
+END
+makefile.owc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/lib/pcre/makefile.owc
+END
+conf
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/lib/pcre/conf
+END
+make
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/lib/pcre/make
+END

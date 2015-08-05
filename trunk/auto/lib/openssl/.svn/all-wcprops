@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/lib/openssl
+END
+makefile.bcc
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/lib/openssl/makefile.bcc
+END
+makefile.msvc
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/lib/openssl/makefile.msvc
+END
+conf
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/lib/openssl/conf
+END
+make
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/lib/openssl/make
+END

@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/sljit
+END
+sljitLir.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/sljit/sljitLir.h
+END
+sljitNativePPC_32.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/sljit/sljitNativePPC_32.c
+END
+sljitUtils.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/sljit/sljitUtils.c
+END
+sljitNativeX86_32.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/sljit/sljitNativeX86_32.c
+END
+sljitNativeARM_v5.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/sljit/sljitNativeARM_v5.c
+END
+sljitNativePPC_common.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/sljit/sljitNativePPC_common.c
+END
+sljitNativePPC_64.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/sljit/sljitNativePPC_64.c
+END
+sljitNativeX86_common.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/sljit/sljitNativeX86_common.c
+END
+sljitNativeX86_64.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/sljit/sljitNativeX86_64.c
+END
+sljitNativeARM_Thumb2.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/sljit/sljitNativeARM_Thumb2.c
+END
+sljitConfigInternal.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/sljit/sljitConfigInternal.h
+END
+sljitConfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/sljit/sljitConfig.h
+END
+sljitNativeMIPS_32.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/sljit/sljitNativeMIPS_32.c
+END
+sljitExecAllocator.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/sljit/sljitExecAllocator.c
+END
+sljitLir.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/sljit/sljitLir.c
+END
+sljitNativeMIPS_common.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/!svn/ver/320363/SOA/ESB/pcre-8.31/sljit/sljitNativeMIPS_common.c
+END

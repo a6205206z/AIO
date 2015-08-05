@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svn/!svn/ver/336692/SOA/ESB/trunk/auto/cc
+END
+name
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/cc/name
+END
+clang
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/cc/clang
+END
+conf
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/336692/SOA/ESB/trunk/auto/cc/conf
+END
+acc
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/cc/acc
+END
+bcc
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/cc/bcc
+END
+ccc
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/cc/ccc
+END
+msvc
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/cc/msvc
+END
+owc
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/cc/owc
+END
+sunc
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/cc/sunc
+END
+gcc
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/cc/gcc
+END
+icc
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/cc/icc
+END

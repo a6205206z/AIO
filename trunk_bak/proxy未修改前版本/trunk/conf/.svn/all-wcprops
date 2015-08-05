@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf
+END
+locations.conf
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf/locations.conf
+END
+fastcgi_params
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf/fastcgi_params
+END
+uwsgi_params.default
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf/uwsgi_params.default
+END
+fastcgi.conf.default
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf/fastcgi.conf.default
+END
+scgi_params
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf/scgi_params
+END
+win-utf
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf/win-utf
+END
+mime.types
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf/mime.types
+END
+nginx.conf.default
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf/nginx.conf.default
+END
+fcgi.conf
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf/fcgi.conf
+END
+uwsgi_params
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf/uwsgi_params
+END
+nagios.conf
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf/nagios.conf
+END
+fastcgi.conf
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf/fastcgi.conf
+END
+esb_monitor.conf
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf/esb_monitor.conf
+END
+esb_merge_location.conf
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf/esb_merge_location.conf
+END
+proxy.conf
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf/proxy.conf
+END
+fastcgi_params.default
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf/fastcgi_params.default
+END
+nginx.conf
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf/nginx.conf
+END
+status.conf
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf/status.conf
+END
+monitor.conf
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf/monitor.conf
+END
+scgi_params.default
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf/scgi_params.default
+END
+upstreamserver.conf
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf/upstreamserver.conf
+END
+esb_merge_address_list.conf
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf/esb_merge_address_list.conf
+END
+mime.types.default
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf/mime.types.default
+END
+log_format.conf
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf/log_format.conf
+END
+koi-win
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf/koi-win
+END
+servers.conf
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf/servers.conf
+END
+koi-utf
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/conf/koi-utf
+END

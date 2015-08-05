@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/363919/SOA/ESB/vesbaiolog4nginx
+END
+config
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/354537/SOA/ESB/vesbaiolog4nginx/config
+END
+CHANGES
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/354462/SOA/ESB/vesbaiolog4nginx/CHANGES
+END
+ngx_http_vesb_aio_log_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/363919/SOA/ESB/vesbaiolog4nginx/ngx_http_vesb_aio_log_module.c
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/354462/SOA/ESB/vesbaiolog4nginx/README
+END

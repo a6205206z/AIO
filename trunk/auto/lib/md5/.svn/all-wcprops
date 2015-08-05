@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/lib/md5
+END
+makefile.bcc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/lib/md5/makefile.bcc
+END
+makefile.msvc
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/lib/md5/makefile.msvc
+END
+makefile.owc
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/lib/md5/makefile.owc
+END
+conf
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/lib/md5/conf
+END
+make
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/319875/SOA/ESB/trunk/auto/lib/md5/make
+END

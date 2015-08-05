@@ -1,0 +1,383 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/363779/SOA/ESB/trunk/src/core
+END
+ngx_spinlock.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_spinlock.c
+END
+ngx_radix_tree.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_radix_tree.c
+END
+ngx_radix_tree.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_radix_tree.h
+END
+ngx_core.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/325876/SOA/ESB/trunk/src/core/ngx_core.h
+END
+ngx_connection.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_connection.c
+END
+ngx_connection.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_connection.h
+END
+nginx.c
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/354257/SOA/ESB/trunk/src/core/nginx.c
+END
+ngx_regex.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_regex.c
+END
+ngx_parse.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_parse.c
+END
+ngx_palloc.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_palloc.c
+END
+ngx_buf.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_buf.c
+END
+nginx.h
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/363779/SOA/ESB/trunk/src/core/nginx.h
+END
+ngx_regex.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_regex.h
+END
+ngx_parse.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_parse.h
+END
+ngx_palloc.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_palloc.h
+END
+ngx_file.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_file.c
+END
+ngx_buf.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_buf.h
+END
+ngx_log.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_log.c
+END
+ngx_queue.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_queue.c
+END
+ngx_file.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_file.h
+END
+ngx_log.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_log.h
+END
+ngx_queue.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_queue.h
+END
+ngx_murmurhash.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_murmurhash.c
+END
+ngx_cycle.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_cycle.c
+END
+ngx_inet.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_inet.c
+END
+ngx_murmurhash.h
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_murmurhash.h
+END
+ngx_crypt.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_crypt.c
+END
+ngx_cycle.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/354257/SOA/ESB/trunk/src/core/ngx_cycle.h
+END
+ngx_inet.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_inet.h
+END
+ngx_crypt.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_crypt.h
+END
+ngx_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_config.h
+END
+ngx_crc32.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_crc32.c
+END
+ngx_crc.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_crc.h
+END
+ngx_array.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_array.c
+END
+ngx_crc32.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_crc32.h
+END
+ngx_esb_core.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/339806/SOA/ESB/trunk/src/core/ngx_esb_core.c
+END
+ngx_open_file_cache.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_open_file_cache.c
+END
+ngx_array.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_array.h
+END
+ngx_hash.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_hash.c
+END
+ngx_conf_file.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_conf_file.c
+END
+ngx_md5.c
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_md5.c
+END
+ngx_esb_core.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/339806/SOA/ESB/trunk/src/core/ngx_esb_core.h
+END
+ngx_open_file_cache.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_open_file_cache.h
+END
+ngx_hash.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_hash.h
+END
+ngx_conf_file.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_conf_file.h
+END
+ngx_md5.h
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_md5.h
+END
+ngx_output_chain.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_output_chain.c
+END
+ngx_cpuinfo.c
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_cpuinfo.c
+END
+ngx_list.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_list.c
+END
+ngx_list.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_list.h
+END
+ngx_times.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_times.c
+END
+ngx_slab.c
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_slab.c
+END
+ngx_rbtree.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_rbtree.c
+END
+ngx_times.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_times.h
+END
+ngx_slab.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_slab.h
+END
+ngx_rbtree.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_rbtree.h
+END
+ngx_sha1.h
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_sha1.h
+END
+ngx_resolver.c
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_resolver.c
+END
+ngx_shmtx.c
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_shmtx.c
+END
+ngx_string.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_string.c
+END
+ngx_resolver.h
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_resolver.h
+END
+ngx_shmtx.h
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/core/ngx_shmtx.h
+END
+ngx_string.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/342065/SOA/ESB/trunk/src/core/ngx_string.h
+END

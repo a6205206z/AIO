@@ -1,0 +1,293 @@
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/svn/!svn/ver/354593/SOA/ESB/trunk/src/http/modules
+END
+ngx_http_gzip_filter_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_gzip_filter_module.c
+END
+ngx_http_gzip_static_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_gzip_static_module.c
+END
+ngx_http_rewrite_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_rewrite_module.c
+END
+ngx_http_log_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_log_module.c
+END
+ngx_http_empty_gif_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_empty_gif_module.c
+END
+ngx_http_referer_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_referer_module.c
+END
+ngx_http_upstream_ip_hash_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_upstream_ip_hash_module.c
+END
+ngx_http_sub_filter_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_sub_filter_module.c
+END
+ngx_http_xslt_filter_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_xslt_filter_module.c
+END
+ngx_http_mp4_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_mp4_module.c
+END
+ngx_http_addition_filter_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_addition_filter_module.c
+END
+ngx_http_access_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_access_module.c
+END
+ngx_http_ssl_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_ssl_module.c
+END
+ngx_http_secure_link_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_secure_link_module.c
+END
+ngx_http_ssi_filter_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_ssi_filter_module.c
+END
+ngx_http_upstream_least_conn_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_upstream_least_conn_module.c
+END
+ngx_http_memcached_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_memcached_module.c
+END
+ngx_http_ssl_module.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_ssl_module.h
+END
+ngx_http_random_index_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_random_index_module.c
+END
+ngx_http_index_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_index_module.c
+END
+ngx_http_ssi_filter_module.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_ssi_filter_module.h
+END
+ngx_http_dav_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_dav_module.c
+END
+ngx_http_geo_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_geo_module.c
+END
+ngx_http_realip_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_realip_module.c
+END
+ngx_http_split_clients_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_split_clients_module.c
+END
+ngx_http_headers_filter_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_headers_filter_module.c
+END
+ngx_http_fastcgi_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_fastcgi_module.c
+END
+ngx_http_stub_status_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/320987/SOA/ESB/trunk/src/http/modules/ngx_http_stub_status_module.c
+END
+ngx_http_proxy_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/354593/SOA/ESB/trunk/src/http/modules/ngx_http_proxy_module.c
+END
+ngx_http_degradation_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_degradation_module.c
+END
+ngx_http_browser_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_browser_module.c
+END
+ngx_http_limit_req_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_limit_req_module.c
+END
+ngx_http_scgi_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_scgi_module.c
+END
+ngx_http_upstream_keepalive_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_upstream_keepalive_module.c
+END
+ngx_http_chunked_filter_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_chunked_filter_module.c
+END
+ngx_http_image_filter_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_image_filter_module.c
+END
+ngx_http_flv_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_flv_module.c
+END
+ngx_http_static_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_static_module.c
+END
+ngx_http_limit_conn_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_limit_conn_module.c
+END
+ngx_http_charset_filter_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_charset_filter_module.c
+END
+ngx_http_uwsgi_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_uwsgi_module.c
+END
+ngx_http_autoindex_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_autoindex_module.c
+END
+ngx_http_userid_filter_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_userid_filter_module.c
+END
+ngx_http_range_filter_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_range_filter_module.c
+END
+ngx_http_auth_basic_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_auth_basic_module.c
+END
+ngx_http_geoip_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_geoip_module.c
+END
+ngx_http_not_modified_filter_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_not_modified_filter_module.c
+END
+ngx_http_map_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/!svn/ver/319875/SOA/ESB/trunk/src/http/modules/ngx_http_map_module.c
+END

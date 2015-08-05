@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http
+END
+ngx_http_copy_filter_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http/ngx_http_copy_filter_module.c
+END
+ngx_http.h
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http/ngx_http.h
+END
+ngx_http_request.c
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http/ngx_http_request.c
+END
+ngx_http_parse_time.c
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http/ngx_http_parse_time.c
+END
+ngx_http_busy_lock.c
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http/ngx_http_busy_lock.c
+END
+ngx_http_core_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http/ngx_http_core_module.c
+END
+ngx_http_request.h
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http/ngx_http_request.h
+END
+ngx_http_special_response.c
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http/ngx_http_special_response.c
+END
+ngx_http_busy_lock.h
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http/ngx_http_busy_lock.h
+END
+ngx_http_upstream.c
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http/ngx_http_upstream.c
+END
+ngx_http_upstream_round_robin.c
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http/ngx_http_upstream_round_robin.c
+END
+ngx_http_header_filter_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http/ngx_http_header_filter_module.c
+END
+ngx_http_file_cache.c
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http/ngx_http_file_cache.c
+END
+ngx_http_core_module.h
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http/ngx_http_core_module.h
+END
+ngx_http_script.c
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http/ngx_http_script.c
+END
+ngx_http_write_filter_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http/ngx_http_write_filter_module.c
+END
+ngx_http_request_body.c
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http/ngx_http_request_body.c
+END
+ngx_http_upstream.h
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http/ngx_http_upstream.h
+END
+ngx_http_upstream_round_robin.h
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http/ngx_http_upstream_round_robin.h
+END
+ngx_http_cache.h
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http/ngx_http_cache.h
+END
+ngx_http_variables.c
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http/ngx_http_variables.c
+END
+ngx_http_script.h
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http/ngx_http_script.h
+END
+ngx_http_parse.c
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http/ngx_http_parse.c
+END
+ngx_http_config.h
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http/ngx_http_config.h
+END
+ngx_http_variables.h
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http/ngx_http_variables.h
+END
+ngx_http.c
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http/ngx_http.c
+END
+ngx_http_postpone_filter_module.c
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/svn/!svn/ver/354593/SOA/ESB/trunk_bak/proxy%E6%9C%AA%E4%BF%AE%E6%94%B9%E5%89%8D%E7%89%88%E6%9C%AC/trunk/src/http/ngx_http_postpone_filter_module.c
+END

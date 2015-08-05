@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/319945/SOA/ESB/substitutions4nginx/util
+END
+wiki2pod.pl
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/319945/SOA/ESB/substitutions4nginx/util/wiki2pod.pl
+END
+update-readme.sh
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/319945/SOA/ESB/substitutions4nginx/util/update-readme.sh
+END
+wiki2google_code_homepage.pl
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/319945/SOA/ESB/substitutions4nginx/util/wiki2google_code_homepage.pl
+END

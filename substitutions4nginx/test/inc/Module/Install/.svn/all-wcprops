@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/319945/SOA/ESB/substitutions4nginx/test/inc/Module/Install
+END
+Fetch.pm
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/319945/SOA/ESB/substitutions4nginx/test/inc/Module/Install/Fetch.pm
+END
+Base.pm
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/!svn/ver/319945/SOA/ESB/substitutions4nginx/test/inc/Module/Install/Base.pm
+END
+TestBase.pm
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/319945/SOA/ESB/substitutions4nginx/test/inc/Module/Install/TestBase.pm
+END
+Makefile.pm
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/319945/SOA/ESB/substitutions4nginx/test/inc/Module/Install/Makefile.pm
+END
+AutoInstall.pm
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/319945/SOA/ESB/substitutions4nginx/test/inc/Module/Install/AutoInstall.pm
+END
+Metadata.pm
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/319945/SOA/ESB/substitutions4nginx/test/inc/Module/Install/Metadata.pm
+END
+Can.pm
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/319945/SOA/ESB/substitutions4nginx/test/inc/Module/Install/Can.pm
+END
+Win32.pm
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/!svn/ver/319945/SOA/ESB/substitutions4nginx/test/inc/Module/Install/Win32.pm
+END
+Include.pm
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/319945/SOA/ESB/substitutions4nginx/test/inc/Module/Install/Include.pm
+END
+WriteAll.pm
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/319945/SOA/ESB/substitutions4nginx/test/inc/Module/Install/WriteAll.pm
+END

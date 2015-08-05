@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/320710/SOA/ESB/trunk/html/templates/partials
+END
+header-menu.mustache
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/320710/SOA/ESB/trunk/html/templates/partials/header-menu.mustache
+END
+charms.mustache
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/320710/SOA/ESB/trunk/html/templates/partials/charms.mustache
+END
+logged-user.mustache
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/320710/SOA/ESB/trunk/html/templates/partials/logged-user.mustache
+END

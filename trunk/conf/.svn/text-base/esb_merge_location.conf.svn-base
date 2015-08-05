@@ -1,0 +1,6 @@
+location ^~/esbmerge_qEV3Ib
+{
+root   sds/xmlsource;
+index  index.desc.xml;
+subs_filter_types text/xml;
+}

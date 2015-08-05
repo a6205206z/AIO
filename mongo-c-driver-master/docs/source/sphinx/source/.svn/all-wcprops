@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/docs/source/sphinx/source
+END
+errors.rst
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/320363/SOA/ESB/mongo-c-driver-master/docs/source/sphinx/source/errors.rst
+END
+building.rst
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/docs/source/sphinx/source/building.rst
+END
+bson.rst
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/docs/source/sphinx/source/bson.rst
+END
+write_concern.rst
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/docs/source/sphinx/source/write_concern.rst
+END
+bcon.rst
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/docs/source/sphinx/source/bcon.rst
+END
+connections.rst
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/docs/source/sphinx/source/connections.rst
+END
+tutorial.rst
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/docs/source/sphinx/source/tutorial.rst
+END
+conf.py
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/docs/source/sphinx/source/conf.py
+END
+index.rst
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/358708/SOA/ESB/mongo-c-driver-master/docs/source/sphinx/source/index.rst
+END
