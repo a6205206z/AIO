@@ -55,4 +55,6 @@ Rails.application.routes.draw do
   #   end
 
   get 'servermonitor/index' => 'server_monitor#index'
+  get 'servermonitor/server' => 'server_monitor#server'
+  get 'servermonitor/tracking_log' => 'server_monitor#tracking_log'
 end

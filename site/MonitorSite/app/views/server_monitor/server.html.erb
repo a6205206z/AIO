@@ -1,0 +1,61 @@
+<% content_for :application do %>
+<script type="text/javascript">
+$(function() {
+    /** This code runs when everything has been loaded on the page */
+    /* Inline sparklines take their values from the contents of the tag */
+    $('.inlinesparkline').sparkline(); 
+
+    /* Sparklines can also take their values from the first argument 
+    passed to the sparkline() function */
+    var myvalues = [10,8,5,7,4,4,1];
+    $('.dynamicsparkline').sparkline(myvalues);
+
+    /* The second argument gives options such as chart type */
+    $('.dynamicbar').sparkline(myvalues, {type: 'bar', barColor: 'green'} );
+
+    /* Use 'html' instead of an array of values to pass options 
+    to a sparkline with data in the tag */
+    $('.inlinebar').sparkline('html', {type: 'bar', barColor: 'red'} );
+});
+</script>
+<h1>Server Monitor</h1>
+<hr />
+<table style="width:100%">
+	<tr>
+		<td height="150px">
+		CPU USED: 
+		<span class="inlinesparkline">
+			<% @systemlog.each do |syslog| %>
+					<%= syslog.cpuused %>,
+			<% end %>
+		</span>
+		</td>
+		<td>
+			MEM USED: 
+			<span class="inlinesparkline">
+				<% @systemlog.each do |syslog| %>
+						<%= syslog.memused %>,
+				<% end %>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td height="150px">
+			REQUEST: 
+			<span class="inlinesparkline">
+				<% @systemlog.each do |syslog| %>
+						<%= syslog.requests %>,
+				<% end %>
+			</span>
+		</td>
+		<td>
+			PROXY REQUEST: 
+			<span class="inlinesparkline">
+				<% @systemlog.each do |syslog| %>
+						<%= syslog.proxyrequests %>,
+				<% end %>
+			</span>
+		</td>
+	</tr>
+</table>
+<% end %>

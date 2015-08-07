@@ -1,0 +1,97 @@
+<% content_for :application do %>
+<script type="text/javascript">
+$(function() {
+    /** This code runs when everything has been loaded on the page */
+    /* Inline sparklines take their values from the contents of the tag */
+    $('.inlinesparkline').sparkline(); 
+
+    /* Sparklines can also take their values from the first argument 
+    passed to the sparkline() function */
+    var myvalues = [10,8,5,7,4,4,1];
+    $('.dynamicsparkline').sparkline(myvalues);
+
+    /* The second argument gives options such as chart type */
+    $('.dynamicbar').sparkline(myvalues, {type: 'bar', barColor: 'green'} );
+
+    /* Use 'html' instead of an array of values to pass options 
+    to a sparkline with data in the tag */
+    $('.inlinebar').sparkline('html', {type: 'bar', barColor: 'red'} );
+});
+</script>
+<h1>System Server Monitor</h1>
+<h2><%= params[:app] %></h2>
+<hr />
+<table style="width:100%">
+	<tr>
+		<td height="150px">
+			REQUEST COUNT:
+			<span class="inlinesparkline">
+				<% @serverlog.each do |serlog| %>
+						<%= serlog.count %>,
+				<% end %>
+			</span>
+		</td>
+		<td>
+			MAX USE TIME:
+			<span class="inlinesparkline">
+				<% @serverlog.each do |serlog| %>
+						<%= serlog.maxusetime %>,
+				<% end %>
+			</span>
+		</td>
+		<td>
+			AVG USE TIME:
+			<span class="inlinesparkline">
+				<% @serverlog.each do |serlog| %>
+						<%= serlog.avgusetime %>,
+				<% end %>
+			</span>
+		</td>
+		<td>
+			MAX AIOPROCESS USE TIME:
+			<span class="inlinesparkline">
+				<% @serverlog.each do |serlog| %>
+						<%= serlog.maxesblogicusetime %>,
+				<% end %>
+			</span>
+		</td>
+	</tr>
+	<tr>
+		<td height="150px">
+			
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			
+		</td>
+		<td>
+			
+		</td>
+	</tr>
+</table>
+<hr />
+<h1>Request Log</h1>
+<table width="100%" border="1">
+<% @tracking.each do |t| %>
+	<tr>
+		<td>
+			<%= t.invoketime %>
+		</td>
+		<td>
+			<%= t.statuscode %>
+		</td>
+		<td>
+			<%= t.url %>
+		</td>
+		<td>
+			<%= t.location %>
+		</td>
+		<td>
+			<%= t.realclientip %>
+		</td>
+	</tr>
+<% end %>
+</table>
+<% end %>
