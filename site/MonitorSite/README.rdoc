@@ -1,4 +1,7 @@
-#Server Monitor
+=Server Monitor
+
 http://domain/servermonitor/server?server={server name}&app={app name}
-#System Server Monitor
+
+=System Server Monitor
+
 http://domain/servermonitor/tracking_log?server={server name}&app={app name}
