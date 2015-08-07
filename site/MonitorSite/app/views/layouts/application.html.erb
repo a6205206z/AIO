@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MonitorSite</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'jquery-1.11.3.min', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'jquery.sparkline.min', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield :application %>
+
+</body>
+</html>
