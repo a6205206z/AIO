@@ -74,10 +74,33 @@ $(function() {
 <hr />
 <h1>Request Log</h1>
 <table width="100%" border="1">
+	<tr>
+		<td>
+			invoketime
+		</td>
+		<td>
+			usetime
+		</td>
+		<td>
+			statuscode
+		</td>
+		<td>
+			url
+		</td>
+		<td>
+			location
+		</td>
+		<td>
+			realclientip
+		</td>
+	</tr>
 <% @tracking.each do |t| %>
 	<tr>
 		<td>
 			<%= t.invoketime %>
+		</td>
+		<td>
+			<%= t.usetime./(1000) %> ms
 		</td>
 		<td>
 			<%= t.statuscode %>
