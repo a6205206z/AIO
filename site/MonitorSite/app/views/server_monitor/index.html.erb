@@ -1,6 +1,22 @@
 <% content_for :application do %>
-<h1>Server Monitor</h1>
-<a href="#">http://domain/servermonitor/server?server={server name}&app={app name}</a>
-<h1>System Server Monitor</h1>
-<a href="#">http://domain/servermonitor/tracking_log?server={server name}&app={app name}</a>
+<div class="widget-container widget_search styled boxed">
+	    <div class="inner">
+	        <form method="get" id="searchform2" action="#">
+	            <div class="clearfix">
+	                <span class="btn">
+	                	<input class="gradient" style="outline: medium none;" hidefocus="true" value="connect" type="button" onclick="connect()">
+	                </span>
+	                <div class="field_text">
+	                	<input style="outline: medium none;" hidefocus="true" id="servername" name="servername" value="" placeholder="Type server name here" type="text">
+	                </div>
+	            </div>
+	        </form>
+	    </div>
+</div>
+<script type="text/javascript">
+	function connect(){
+		window.location.href = "/servermonitor/server?server=" + $("#servername").val();
+	}
+</script>
+
 <% end %>

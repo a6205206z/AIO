@@ -1,0 +1,21 @@
+[
+<% i=0 %>
+<% @systemlog.each do |syslog| %>
+<% if i > 0 %>
+,
+<% end %>
+		{
+			"date": "<%= syslog.processtime.localtime.strftime('%Y/%m/%d %H:%M:%S') %>",
+			<% if params[:field] == "requests"%>
+			"value": "<%= syslog.requests %>"
+			<% elsif params[:field] == "proxyrequests" %>
+			"value": "<%= syslog.proxyrequests %>"
+			<% elsif params[:field] == "cpuused" %>
+			"value": "<%= syslog.cpuused %>"
+			<% elsif params[:field] == "memused" %>
+			"value": "<%= syslog.memused %>"
+			<% end %>
+		}
+<% i+=1 %>
+<% end %>
+]

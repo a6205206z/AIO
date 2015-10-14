@@ -1,0 +1,21 @@
+[
+<% i=0 %>
+<% @serverlog.each do |serlog| %>
+<% if i > 0 %>
+,
+<% end %>
+		{
+			"date": "<%= serlog.processtime.localtime.strftime('%Y/%m/%d %H:%M:%S') %>",
+			<% if params[:field] == "count"%>
+			"value": "<%= serlog.count %>"
+			<% elsif params[:field] == "maxusetime" %>
+			"value": "<%= serlog.maxusetime/(1000) %>"
+			<% elsif params[:field] == "avgusetime" %>
+			"value": "<%= serlog.avgusetime/(1000) %>"
+			<% elsif params[:field] == "maxesblogicusetime" %>
+			"value": "<%= serlog.maxesblogicusetime/(1000) %>"
+			<% end %>
+		}
+<% i+=1 %>
+<% end %>
+]

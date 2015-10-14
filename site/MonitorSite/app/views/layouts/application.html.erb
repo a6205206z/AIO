@@ -1,15 +1,52 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>MonitorSite</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'jquery-1.11.3.min', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'jquery.sparkline.min', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	<title>MonitorSite</title>
+	<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+	<%= javascript_include_tag 'jquery-1.11.3.min', 'data-turbolinks-track' => true %>
+	<!-- Style CSS -->
+	<link href="/metro-vibes-css/css/bootstrap.css" media="screen" rel="stylesheet">
+	<link href="/metro-vibes-css/style.css" media="screen" rel="stylesheet">
+	<%= csrf_meta_tags %>
 </head>
 <body>
 
-<%= yield :application %>
+<div class="container container-wide">
+	<!-- Website Menu -->
+	<div id="topmenu">
+	    <ul class="dropdown clearfix boxed">
+	        <li class="menu-level-0"><a href="/servermonitor/index"><i class="icon-menu"></i><span>HOME</span></a></li>
+	        <!--<li class="menu-level-0"><a href="#"><i class="icon-menu icon-menu2"></i><span>events</span></a> </li>-->
+	        <!--
+	        <li class="menu-level-0"><a href="#"><i class="icon-menu icon-menu3"></i><span>account</span><sup class="note">3</sup></a>
+	            <ul class="submenu-1">
+	                <li class="menu-level-1"><a href="#">Web design</a></li>
+	                <li class="menu-level-1"><a href="#">User interface</a></li>
+	                <li class="menu-level-1"><a href="#">Social media</a>
+	                    <ul class="submenu-2">
+	                        <li class="menu-level-2"><a href="#">Gallery images</a></li>
+	                        <li class="menu-level-2"><a href="#">Fine Slider</a></li>
+	                        <li class="menu-level-2"><a href="#">Video in header</a></li>
+	                        <li class="menu-level-2"><a href="#">Video Slider</a>
+	                            <ul class="submenu-3">
+	                                <li class="menu-level-3"><a href="#">Item 1</a></li>
+	                                <li class="menu-level-3"><a href="#">Item 2</a></li>
+	                                <li class="menu-level-3"><a href="#">Item 3</a></li>
+	                            </ul>
+	                        </li>
+	                    </ul>
+	                </li>
+	            </ul>
+	        </li>
+	        -->
+	        <li class="menu-level-0"><a href="#"><i class="icon-menu icon-menu4"></i><span>settings</span></a></li>
+	    </ul>
+	</div>
+	<!-- content -->
+	<div  role="main">
+	<%= yield :application %>
+	</div>
+</div>
 
 </body>
 </html>

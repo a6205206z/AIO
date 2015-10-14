@@ -154,8 +154,9 @@ install:	$NGX_OBJS${ngx_dirsep}nginx${ngx_binext} \
 	cp conf/esb_monitor.conf '\$(DESTDIR)$NGX_CONF_PREFIX/esb_monitor.conf'
 	cp conf/proxy.conf '\$(DESTDIR)$NGX_CONF_PREFIX/proxy.conf'
 	cp conf/status.conf '\$(DESTDIR)$NGX_CONF_PREFIX/status.conf'
-	mkdir -p '\$(DESTDIR)$NGX_CONF_PREFIX/deployments'
-	cp -R conf/deployments '\$(DESTDIR)$NGX_CONF_PREFIX/deployments'
+	cp conf/log_format.conf '\$(DESTDIR)$NGX_CONF_PREFIX/log_format.conf'
+	cp conf/servers.conf '\$(DESTDIR)$NGX_CONF_PREFIX/servers.conf'
+	cp -R conf/deployments '\$(DESTDIR)$NGX_CONF_PREFIX'
 
 END
 

@@ -1,61 +1,317 @@
 <% content_for :application do %>
-<script type="text/javascript">
-$(function() {
-    /** This code runs when everything has been loaded on the page */
-    /* Inline sparklines take their values from the contents of the tag */
-    $('.inlinesparkline').sparkline(); 
+<link rel="stylesheet" href="/amstockchart/amcharts/style.css" type="text/css">
+<script src="/amstockchart/amcharts/amcharts.js" type="text/javascript"></script>
+<script src="/amstockchart/amcharts/gauge.js" type="text/javascript"></script>
+<script src="/amstockchart/amcharts/serial.js" type="text/javascript"></script>
+<script src="/amstockchart/amcharts/themes/black.js" type="text/javascript"></script>
+<script src="/amstockchart/amcharts/themes/light.js" type="text/javascript"></script>
+<script src="/amstockchart/amcharts/themes/dark.js" type="text/javascript"></script>
+<script src="/amstockchart/amcharts/themes/chalk.js" type="text/javascript"></script>
+<script>
 
-    /* Sparklines can also take their values from the first argument 
-    passed to the sparkline() function */
-    var myvalues = [10,8,5,7,4,4,1];
-    $('.dynamicsparkline').sparkline(myvalues);
+    var requestsData = [];
+    var proxyData = [];
 
-    /* The second argument gives options such as chart type */
-    $('.dynamicbar').sparkline(myvalues, {type: 'bar', barColor: 'green'} );
 
-    /* Use 'html' instead of an array of values to pass options 
-    to a sparkline with data in the tag */
-    $('.inlinebar').sparkline('html', {type: 'bar', barColor: 'red'} );
-});
+    var requestChart = AmCharts.makeChart("reqchartdiv", {
+        type: "serial",
+        theme: "light",
+        // setting language to German
+        language: "de",
+
+        dataProvider: requestsData,
+        categoryField: "date",
+        categoryAxis: {
+            parseDates: false,
+            gridAlpha: 0.15,
+            minorGridEnabled: true,
+            labelsEnabled:false,
+            //axisColor: "#DADADA"
+        },
+        valueAxes: [{
+            axisAlpha: 0.2,
+            id: "v1"
+        }],
+        graphs: [{
+            title: "red line",
+            id: "g1",
+            valueAxis: "v1",
+            valueField: "requests",
+            bullet: "round",
+            bulletBorderColor: "#FFFFFF",
+            bulletBorderAlpha: 1,
+            lineThickness: 2,
+            lineColor: "#b5030d",
+            negativeLineColor: "#0352b5",
+            hideBulletsCount:30,
+            balloonText: "[[category]]<br><b><span style='font-size:14px;'>value: [[value]]</span></b>"
+        }],
+        chartCursor: {
+            fullWidth:true,
+            cursorAlpha:0.1
+        }
+    });
+
+    var proxyChart = AmCharts.makeChart("proxychartdiv", {
+        type: "serial",
+        theme: "light",
+        // setting language to German
+        language: "de",
+
+        dataProvider: proxyData,
+        categoryField: "date",
+        categoryAxis: {
+            parseDates: false,
+            gridAlpha: 0.15,
+            minorGridEnabled: true,
+            labelsEnabled:false,
+            axisColor: "#DADADA"
+        },
+        valueAxes: [{
+            axisAlpha: 0.2,
+            id: "v1"
+        }],
+        graphs: [{
+            title: "red line",
+            id: "g1",
+            valueAxis: "v1",
+            valueField: "requests",
+            bullet: "round",
+            bulletBorderColor: "#FFFFFF",
+            bulletBorderAlpha: 1,
+            lineThickness: 2,
+            lineColor: "#b5030d",
+            negativeLineColor: "#0352b5",
+            hideBulletsCount:30,
+            balloonText: "[[category]]<br><b><span style='font-size:14px;'>value: [[value]]</span></b>"
+        }],
+        chartCursor: {
+            fullWidth:true,
+            cursorAlpha:0.1
+        },
+
+    });
+
+    //request
+    generateChartData(requestsData,requestChart,"/api/server?server=<%= params[:server]%>&field=requests&count=200");
+    setInterval(function() {
+    $.getJSON("/api/server?server=<%= params[:server]%>&field=requests&count=1",function(result){
+
+            if(new Date(result[0].date) - requestsData[requestsData.length - 1].date > 0){
+                requestsData.push({
+                    date: new Date(result[0].date),
+                    requests: result[0].value
+                });
+                requestsData.shift();
+                requestChart.validateData();
+            }
+            
+      });
+    }, 3000);
+
+    //proxy
+    generateChartData(proxyData,proxyChart,"/api/server?server=<%= params[:server]%>&field=proxyrequests&count=200");
+    setInterval(function() {
+    $.getJSON("/api/server?server=<%= params[:server]%>&field=proxyrequests&count=1",function(result){
+
+            if(new Date(result[0].date) - proxyData[proxyData.length - 1].date > 0){
+                proxyData.push({
+                    date: new Date(result[0].date),
+                    requests: result[0].value
+                });
+                proxyData.shift();
+                proxyChart.validateData();
+            }
+            
+      });
+    }, 3000);
+
+
+
+
+
+
+    // generate some random data, quite different range
+    function generateChartData(chartData,chart,dataUrl) {
+	  $.getJSON(dataUrl,function(result){
+	    $.each(result, function(i, field){
+	        chartData.push({
+                date: new Date(field.date),
+                requests: field.value
+            });
+            chartData.sort(function(x,y){
+                                if(x.date > y.date) {
+                                    return 1;
+                                }
+                                else{
+                                    return -1;
+                                }
+                            });
+	    });
+        chart.validateData();
+	  });
+    }
+    
+    var chart_mem = AmCharts.makeChart("chartmemdiv", {
+        type: "gauge",
+        theme: "light",
+        titles: [{
+            "text": "",
+            "size": 15
+        }],
+
+        axes: [{
+            startValue: 0,
+            axisThickness: 1,
+            endValue: 100,
+            valueInterval: 10,
+            bottomTextYOffset: -20,
+            bottomText: "0 %",
+
+            bands: [{
+                    startValue: 0,
+                    endValue: 50,
+                    color: "#00CC00"
+                },
+
+                {
+                    startValue: 50,
+                    endValue: 80,
+                    color: "#ffac29"
+                },
+
+                {
+                    startValue: 80,
+                    endValue: 100,
+                    color: "#ea3838",
+                    innerRadius: "95%"
+                }
+            ]
+        }],
+
+        arrows: [{}]
+    });
+
+    setInterval(setmemusedata, 2000);
+
+     // set random value
+    function setmemusedata() {
+    $.getJSON("/api/server?server=<%= params[:server]%>&field=memused&count=1",function(result){
+            $.each(result, function(i, field){
+                chart_mem.arrows[0].setValue(field.value);
+                chart_mem.axes[0].setBottomText(field.value + " %");
+            });
+        });
+    }
+
+
+    var chart_cpu = AmCharts.makeChart("chartcpudiv", {
+        type: "gauge",
+        theme: "light",
+        titles: [{
+            "text": "",
+            "size": 15
+        }],
+
+        axes: [{
+            startValue: 0,
+            axisThickness: 1,
+            endValue: 100,
+            valueInterval: 10,
+            bottomTextYOffset: -20,
+            bottomText: "0 %",
+
+            bands: [{
+                    startValue: 0,
+                    endValue: 50,
+                    color: "#00CC00"
+                },
+
+                {
+                    startValue: 50,
+                    endValue: 80,
+                    color: "#ffac29"
+                },
+
+                {
+                    startValue: 80,
+                    endValue: 100,
+                    color: "#ea3838",
+                    innerRadius: "95%"
+                }
+            ]
+        }],
+
+        arrows: [{}]
+    });
+
+    setInterval(setcpuusedata, 2000);
+
+     // set random value
+    function setcpuusedata() {
+    $.getJSON("/api/server?server=<%= params[:server]%>&field=cpuused&count=1",function(result){
+            $.each(result, function(i, field){
+                chart_cpu.arrows[0].setValue(field.value);
+                chart_cpu.axes[0].setBottomText(field.value + " %");
+            });
+        });
+    }
 </script>
-<h1>Server Monitor</h1>
-<hr />
-<table style="width:100%">
-	<tr>
-		<td height="150px">
-		CPU USED: 
-		<span class="inlinesparkline">
-			<% @systemlog.each do |syslog| %>
-					<%= syslog.cpuused %>,
-			<% end %>
-		</span>
-		</td>
-		<td>
-			MEM USED: 
-			<span class="inlinesparkline">
-				<% @systemlog.each do |syslog| %>
-						<%= syslog.memused %>,
-				<% end %>
-			</span>
-		</td>
-	</tr>
-	<tr>
-		<td height="150px">
-			REQUEST: 
-			<span class="inlinesparkline">
-				<% @systemlog.each do |syslog| %>
-						<%= syslog.requests %>,
-				<% end %>
-			</span>
-		</td>
-		<td>
-			PROXY REQUEST: 
-			<span class="inlinesparkline">
-				<% @systemlog.each do |syslog| %>
-						<%= syslog.proxyrequests %>,
-				<% end %>
-			</span>
-		</td>
-	</tr>
-</table>
+<div class="row"> 
+    <div class="col-sm-4">
+        <div class="widget-container scrollBars boxed">
+            <h3 class="widget-title">Memory usage</h3>
+            <div class="inner clearfix">
+                <div id="chartmemdiv" style="width:250px; height:250px;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="widget-container scrollBars boxed">
+            <h3 class="widget-title">CPU usage</h3>
+            <div class="inner clearfix">
+                <div id="chartcpudiv" style="width:250px; height:250px;"></div>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="widget-container scrollBars boxed">
+            <h3 class="widget-title">Select app</h3>
+            <div class="inner clearfix">
+                <form method="get" id="searchform2" action="#">
+                    <div class="clearfix">
+                        <span class="btn">
+                            <input class="gradient" style="outline: medium none;" hidefocus="true" value="GO" type="button" onclick="go()">
+                        </span>
+                        <div class="field_text">
+                            <input style="outline: medium none;" hidefocus="true" id="appname" name="appname" value="" placeholder="Type app name here" type="text">
+                        </div>
+                    </div>
+                </form>
+                <div class="tagcloud pull-right">
+                    <a style="outline: medium none;" hidefocus="true" href="/servermonitor/tracking_log?server=<%= params[:server]%>&app=uoko" class="tag-link-1" title="uoko"><span>uoko</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>        
+
+
+<div class="row"> 
+    <div class="widget-container scrollBars boxed">
+        <h3 class="widget-title">REQUEST</h3>
+        <div id="reqchartdiv" style="width: 100%; height: 200px;"></div>
+    </div>
+</div>
+<div class="row"> 
+    <div class="widget-container scrollBars boxed">
+        <h3 class="widget-title">PROXY REQUEST</h3>
+        <div id="proxychartdiv" style="width: 100%; height: 200px;"></div>
+    </div>
+</div>
+<script type="text/javascript">
+    function go(){
+        window.location.href = "/servermonitor/tracking_log?server=<%= params[:server]%>&app=" + $("#appname").val();
+    }
+</script>
 <% end %>

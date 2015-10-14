@@ -53,8 +53,10 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-
+  root 'servermonitor#index'
   get 'servermonitor/index' => 'server_monitor#index'
   get 'servermonitor/server' => 'server_monitor#server'
   get 'servermonitor/tracking_log' => 'server_monitor#tracking_log'
+  get 'api/server' => 'api#server'
+  get 'api/tracking_log' => 'api#tracking_log'
 end
