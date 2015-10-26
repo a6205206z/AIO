@@ -10,7 +10,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <!--[if gt IE 8]><!-->
     <html class="no-js" lang="en">
       <head>
-        <title>Welcome to Vancl ESB!</title>
+        <title>Welcome to AIO ESB!</title>
 
         <meta charset="utf-8" />
         <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
@@ -69,7 +69,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
           <div class="row-fluid">
             <div class="span8">
               <div id="header-container">
-                <a id="backbutton" class="win-backbutton" href="http://esb.vancloa.cn/"></a>
+                <a id="backbutton" class="win-backbutton" href="#"></a>
                 <h5>The New ESB</h5>
                 <div class="dropdown">
                   <a class="header-dropdown dropdown-toggle accent-color" data-toggle="dropdown" href="#">
@@ -78,10 +78,10 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                   </a>
                   <ul class="dropdown-menu">
                     <li>
-                      <a href="http://esb.vancloa.cn/">Esb Platform</a>
+                      <a href="#">Esb Platform</a>
                     </li>
                     <li>
-                      <a href="http://et.vancloa.cn/">ErrorTrack</a>
+                      <a href="#">ErrorTrack</a>
                     </li>
                     <li class="divider"></li>
                     <li>
