@@ -1,0 +1,26 @@
+<% content_for :application do %>
+		<% @servers.each do |server| %>
+			<div class="col-sm-4">
+				<div class="widget-container widget-trade boxed">
+		            <div class="widget-title">
+		                <span class="trade-rate trade-rate-up"><%= server.ip_address %></span>
+		                <span class="trade-rate-change">port:<%= server.port %></span>
+		            </div>
+		            <div class="inner">
+		             	<h4 class="trade-location"><a style="outline: medium none;" hidefocus="true" href="#"><%= server.server_name %></a></h4>
+		                <div class="trade-time"><%= server.description %></div>
+
+		                <div class="trade-bottom trade-graph">
+		                    <h6 class="trade-bottom-title"></h6>
+		                    <div class="trade-bottom-content"><a href="/servermonitor/server?server=<%= server.server_name%>"><img src="/metro-vibes-css/images/trade-graph.png" alt=""></a></div>
+		                </div>
+		                <div class="trade-bottom trade-yearly-change">
+		                    <h6 class="trade-bottom-title"></h6>
+		                    <a href="/server/<%= server.id %>/edit"><div class="trade-bottom-content"><span>EDIT</span></div></a>
+		                </div>
+		                <div class="clear"></div>
+		            </div>
+		        </div>
+	        </div>
+		<% end %>
+<% end %>

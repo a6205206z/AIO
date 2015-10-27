@@ -1,0 +1,38 @@
+<% content_for :application do %>
+	<% form_for :service, :url => service_index_path()  do |form| %>
+		<div class="widget-container widget_search styled boxed">
+			<div style="height:100px;"></div>
+		    <div class="inner">
+		            <div class="clearfix">
+		                <span class="btn">
+		                	
+		                </span>
+		                <div class="field_text">
+		                	<h5>Service real address :</h5>
+		                	<%= form.text_field :real_address, :id => "real_address", :style => "outline: medium none;", :placeholder => "Type real address here", :hidefocus => "true" %>
+		                	<h5>ESB address :</h5>
+		                	<%= form.text_field :esb_address, :id => "esb_address", :style => "outline: medium none; ", :placeholder => "Type esb address here", :hidefocus => "true" %>
+
+		                	<h5>Service ESB Name :</h5>
+		                	<%= form.text_field :name, :id => "name", :style => "outline: medium none;", :placeholder => "Type service esb name here", :hidefocus => "true" %>
+		                	<h5>Your or Your group's Email address :</h5>
+		                	<%= form.text_field :register_user_mail_address, :id => "register_user_mail_address", :style => "outline: medium none;", :placeholder => "Type email address here", :hidefocus => "true" %>
+		                	<h5>Environment which this service run and  version:</h5>
+		                	<%= form.text_field :environment, :id => "environment", :style => "outline: medium none; width:50%;", :placeholder => "Type environment here", :hidefocus => "true" %>
+		                	<%= form.text_field :major_version, :id => "major_version", :style => "outline: medium none;width:20%;", :placeholder => "Type major version here", :hidefocus => "true" %>
+		                	<%= form.text_field :minor_version, :id => "minor_version", :style => "outline: medium none;width:20%;", :placeholder => "Type minor version here", :hidefocus => "true" %>
+		                	<h5>Server Description :</h5>
+		                	<%= form.text_area :description, :id => "description", :style => "outline: medium none;", :placeholder => "Type description here", :hidefocus => "true" %>
+		                	<div style="height:100px;"></div>
+
+		                	<span  style="outline: medium none;" class="btn btn-red">
+			                	<%= submit_tag "OK GO!" , :class => "gradient", :style => "outline: medium none;", :hidefocus => "true", :id => "ok" %>
+		                	</span>
+		                </div>
+			                	
+		            </div>
+		    </div>
+			<div style="height:100px;"></div>
+		</div>
+	<% end %>
+<% end %>

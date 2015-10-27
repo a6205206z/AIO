@@ -1,0 +1,14 @@
+<% content_for :application do %>
+	<div class="widget-container widget-trade boxed">
+    <div class="inner">
+        <h6 class="trade-location"><a style="outline: medium none;" hidefocus="true" href="#">Request Log</a></h6>
+        <ul class="stats-data clearfix">
+        	<% @services.each do |service| %>
+        		<li><a style="outline: medium none;" hidefocus="true" href="#"><strong><%= service.name %></strong><span><%= service.environment %>&nbsp;ver.&nbsp;<%= service.major_version %>.<%= service.minor_version %></span></a></li>
+        		<li><a style="outline: medium none;" hidefocus="true" href="#"><strong><%= service.register_user_mail_address %></strong><span><%= service.register_user_mail_address %></span></a></li>
+            <% end %>
+        </ul>
+        <div class="clear"></div>
+    </div>
+</div>
+<% end %>

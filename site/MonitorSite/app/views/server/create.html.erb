@@ -1,0 +1,8 @@
+<% content_for :application do %>
+	<% @server.errors.full_messages.each do |msg| %>
+	     <div class="alert alert-danger"><%= msg %></div>
+	<% end %>
+	<!--这里是提示增加失败提示(可同时用于其他操作的失败或成功提示)-->
+
+	<div class="alert alert-success"><a href="/server">继续</a></div>
+<% end %>

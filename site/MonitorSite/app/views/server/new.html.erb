@@ -1,0 +1,33 @@
+<% content_for :application do %>
+	<% form_for :server, :url => server_index_path()  do |form| %>
+		<div class="widget-container widget_search styled boxed">
+			<div style="height:100px;"></div>
+		    <div class="inner">
+		            <div class="clearfix">
+		                <span class="btn">
+		                	
+		                </span>
+		                <div class="field_text">
+		                	<h5>Server Name :</h5>
+		                	<%= form.text_field :server_name, :id => "server_name", :style => "outline: medium none;", :placeholder => "Type server name here", :hidefocus => "true" %>
+		                	<h5>IP Address :</h5>
+		                	<%= form.text_field :ip_address, :id => "ip_address", :style => "outline: medium none; width:80%;", :placeholder => "Type ip address here", :hidefocus => "true" %>
+		                	<%= form.text_field :port, :id => "port", :style => "outline: medium none;  width:17%;", :placeholder => "Port", :hidefocus => "true" %>
+
+		                	<h5>Host Name :</h5>
+		                	<%= form.text_field :host_name, :id => "host_name", :style => "outline: medium none;", :placeholder => "Type host name here", :hidefocus => "true" %>
+		                	<h5>Server Description :</h5>
+		                	<%= form.text_area :description, :id => "description", :style => "outline: medium none;", :placeholder => "Type description here", :hidefocus => "true" %>
+		                	<div style="height:100px;"></div>
+
+		                	<span  style="outline: medium none;" class="btn btn-red">
+			                	<%= submit_tag "OK GO!" , :class => "gradient", :style => "outline: medium none;", :hidefocus => "true", :id => "ok" %>
+		                	</span>
+		                </div>
+			                	
+		            </div>
+		    </div>
+			<div style="height:100px;"></div>
+		</div>
+	<% end %>
+<% end %>

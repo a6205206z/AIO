@@ -54,9 +54,19 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
   root 'server_monitor#index'
+
+  #ServerMonitorController
   get 'servermonitor/index' => 'server_monitor#index'
   get 'servermonitor/server' => 'server_monitor#server'
   get 'servermonitor/tracking_log' => 'server_monitor#tracking_log'
+
+  #ApiController
   get 'api/server' => 'api#server'
   get 'api/tracking_log' => 'api#tracking_log'
+
+  #ManagementController
+  resources :server do
+  end
+  resources :service do
+  end
 end
