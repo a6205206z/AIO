@@ -22,11 +22,11 @@ class Setup < ActiveRecord::Migration
 
 		create_table :subscription_infos do |t|
 			t.column :service_id, :integer, :null => false
-			t.column :Subscriber_name, :string, :default => "", :null => false
-			t.column :Subscriber_group_name, :string, :default => "", :null => false
+			t.column :subscriber_name, :string, :default => "", :null => false
+			t.column :subscriber_group_name, :string, :default => "", :null => false
 			t.column :description, :string, :limit => 200
-			t.column :Subscriber_mail_address, :string, :default => "", :null => false
-			t.column :Subscribe_date, :datetime, :null => false
+			t.column :subscriber_mail_address, :string, :default => "", :null => false
+			t.column :subscribe_date, :datetime, :null => false
 		end
 	end
 end

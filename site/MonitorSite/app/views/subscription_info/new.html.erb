@@ -1,0 +1,33 @@
+<% content_for :application do %>
+	<% form_for :subscription_info, :url => subscription_info_index_path()  do |form| %>
+		<div class="widget-container widget_search styled boxed">
+			<div style="height:100px;"></div>
+		    <div class="inner">
+		            <div class="clearfix">
+		                <span class="btn">
+		                	<%= form.hidden_field :service_id, :value => params[:serviceid] %>
+		                </span>
+		                <div class="field_text">
+		                	<h5>SELECTED : <%= params[:app] %></h5>
+		                	<h5>Your Name :</h5>
+		                	<%= form.text_field :subscriber_name, :id => "subscriber_name", :style => "outline: medium none;", :placeholder => "Type your name here", :hidefocus => "true" %>
+		                	<h5>Your Group Name :</h5>
+		                	<%= form.text_field :subscriber_group_name, :id => "subscriber_group_name", :style => "outline: medium none; ", :placeholder => "Type your group here", :hidefocus => "true" %>
+
+		                	<h5>Your or Your group's Email address :</h5>
+		                	<%= form.text_field :subscriber_mail_address, :id => "subscriber_mail_address", :style => "outline: medium none;", :placeholder => "Type email address here", :hidefocus => "true" %>
+		                	<h5>Remark :</h5>
+		                	<%= form.text_area :description, :id => "description", :style => "outline: medium none;", :placeholder => "Type description here", :hidefocus => "true" %>
+		                	<div style="height:100px;"></div>
+
+		                	<span  style="outline: medium none;" class="btn btn-red">
+			                	<%= submit_tag "OK GO!" , :class => "gradient", :style => "outline: medium none;", :hidefocus => "true", :id => "ok" %>
+		                	</span>
+		                </div>
+			                	
+		            </div>
+		    </div>
+			<div style="height:100px;"></div>
+		</div>
+	<% end %>
+<% end %>

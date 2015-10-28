@@ -302,7 +302,6 @@
 <div class="widget-container widget-trade boxed">
     <div class="inner">
         <h6 class="trade-location"><a style="outline: medium none;" hidefocus="true" href="#">Request Log</a></h6>
-        <ul class="stats-data clearfix">
         	<% @tracking.each do |t| %>
         		<% 
         		if t.statuscode >= 500
@@ -311,12 +310,13 @@
         			@licolor="yellow"
         		end
         		%>
-
-        		<li class="first <%= @licolor%>"><a style="outline: medium none;" hidefocus="true" href="#"><strong><%= t.statuscode %></strong><span><%= t.usetime./(1000) %> ms</span></a></li>
-				<li class="<%= @licolor%>"><a style="outline: medium none;" hidefocus="true" href="#"><strong><%= t.url %></strong><span><%= t.invoketime.localtime %></span></a></li>
-				<li class="last <%= @licolor%>"><a style="outline: medium none;" hidefocus="true" href="#"><strong><%= t.realclientip %></strong><span><%= t.location %></span></a></li>
+                <ul class="stats-data clearfix">
+            		<li class="first <%= @licolor%>"><a style="outline: medium none;" hidefocus="true" href="#"><strong><%= t.statuscode %></strong><span><%= t.usetime./(1000) %> ms</span></a></li>
+    				<li class="<%= @licolor%>"><a style="outline: medium none;" hidefocus="true" href="#"><span><%= t.url %></span><span><%= t.invoketime.localtime %></span></a></li>
+    				<li class="last <%= @licolor%>"><a style="outline: medium none;" hidefocus="true" href="#"><strong><%= t.realclientip %></strong><span><%= t.location %></span></a></li>
+                </ul>
             <% end %>
-        </ul>
+        
         <div class="clear"></div>
     </div>
 </div>

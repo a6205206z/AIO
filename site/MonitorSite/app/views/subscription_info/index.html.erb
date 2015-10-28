@@ -1,0 +1,25 @@
+<% content_for :application do %>
+	<ol>
+		<% @subscription_info.each do |sub|%>
+		<li class="comment first last">
+	            <div class="comment-body boxed">
+	                <div class="comment-arrow"></div>
+	                <div class="comment-avatar">
+	                    <div class="avatar"></div>
+	                </div>
+	                <div class="comment-text">
+	                    <div class="comment-author clearfix">
+	                        <a style="outline: medium none;" hidefocus="true" href="#" class="link-author"><%= Service.find(sub.service_id).name %> @ <%= Service.find(sub.service_id).esb_address %></a>
+	                        #<%= sub.subscriber_name %>(<%= sub.subscriber_mail_address %>)
+	                    </div>
+	                    <div class="comment-entry">
+	                        <%= sub.description %><br/>
+	                        <%= sub.subscribe_date %><br/>
+	                    </div>
+	                </div>
+	                <div class="clear"></div>
+	            </div>
+	        </li>
+	     <% end %>
+     </ol>
+<% end %>

@@ -35,11 +35,11 @@ ActiveRecord::Schema.define(version: 1) do
 
   create_table "subscription_infos", force: :cascade do |t|
     t.integer  "service_id",              limit: 4,                null: false
-    t.string   "Subscriber_name",         limit: 255, default: "", null: false
-    t.string   "Subscriber_group_name",   limit: 255, default: "", null: false
+    t.string   "subscriber_name",         limit: 255, default: "", null: false
+    t.string   "subscriber_group_name",   limit: 255, default: "", null: false
     t.string   "description",             limit: 200
-    t.string   "Subscriber_mail_address", limit: 255, default: "", null: false
-    t.datetime "Subscribe_date",                                   null: false
+    t.string   "subscriber_mail_address", limit: 255, default: "", null: false
+    t.datetime "subscribe_date",                                   null: false
   end
 
 end

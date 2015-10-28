@@ -53,7 +53,7 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-  root 'server_monitor#index'
+  root 'server#index'
 
   #ServerMonitorController
   get 'servermonitor/index' => 'server_monitor#index'
@@ -68,5 +68,7 @@ Rails.application.routes.draw do
   resources :server do
   end
   resources :service do
+  end
+  resources :subscription_info do
   end
 end
