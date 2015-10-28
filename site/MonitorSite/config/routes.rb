@@ -71,4 +71,7 @@ Rails.application.routes.draw do
   end
   resources :subscription_info do
   end
+
+  #file_builder
+  get 'file_builder/deployments/:service_name' => 'file_builder#deployments'
 end

@@ -1,0 +1,10 @@
+<% @services.each do |service|%>
+#<%=service.name %>
+location ^~<%=service.esb_address%>
+{
+proxy_pass <%=service.real_address%>;
+subs_filter_types text/xml;
+
+proxy_pass_customize <%=service.name %> 200000;
+}
+<% end %>
