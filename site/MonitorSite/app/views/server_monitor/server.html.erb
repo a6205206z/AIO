@@ -258,39 +258,19 @@
     }
 </script>
 <div class="row"> 
-    <div class="col-sm-4">
+    <div class="col-sm-6">
         <div class="widget-container scrollBars boxed">
             <h3 class="widget-title">Memory usage</h3>
             <div class="inner clearfix">
-                <div id="chartmemdiv" style="width:250px; height:250px;"></div>
+                <div id="chartmemdiv" style="width:300px; height:250px;"></div>
             </div>
         </div>
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-6">
         <div class="widget-container scrollBars boxed">
             <h3 class="widget-title">CPU usage</h3>
             <div class="inner clearfix">
-                <div id="chartcpudiv" style="width:250px; height:250px;"></div>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-4">
-        <div class="widget-container scrollBars boxed">
-            <h3 class="widget-title">Select app</h3>
-            <div class="inner clearfix">
-                <form method="get" id="searchform2" action="#">
-                    <div class="clearfix">
-                        <span class="btn">
-                            <input class="gradient" style="outline: medium none;" hidefocus="true" value="GO" type="button" onclick="go()">
-                        </span>
-                        <div class="field_text">
-                            <input style="outline: medium none;" hidefocus="true" id="appname" name="appname" value="" placeholder="Type app name here" type="text">
-                        </div>
-                    </div>
-                </form>
-                <div class="tagcloud pull-right">
-                    <a style="outline: medium none;" hidefocus="true" href="/servermonitor/tracking_log?server=<%= params[:server]%>&app=uoko" class="tag-link-1" title="uoko"><span>uoko</span></a>
-                </div>
+                <div id="chartcpudiv" style="width:300px; height:250px;"></div>
             </div>
         </div>
     </div>

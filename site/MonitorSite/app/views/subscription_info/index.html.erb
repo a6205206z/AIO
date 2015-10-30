@@ -5,16 +5,16 @@
 	            <div class="comment-body boxed">
 	                <div class="comment-arrow"></div>
 	                <div class="comment-avatar">
-	                    <div class="avatar"></div>
+	                    <div class="avatar"><span style="font-size:75px;"><%= sub.subscriber_name[0] %></span></div>
 	                </div>
 	                <div class="comment-text">
 	                    <div class="comment-author clearfix">
 	                        <a style="outline: medium none;" hidefocus="true" href="#" class="link-author"><%= Service.find(sub.service_id).name %> @ <%= Service.find(sub.service_id).esb_address %></a>
-	                        #<%= sub.subscriber_name %>(<%= sub.subscriber_mail_address %>)
+	                        #<%= sub.subscriber_group_name %>#<%= sub.subscriber_name %>(<%= sub.subscriber_mail_address %>)
 	                    </div>
 	                    <div class="comment-entry">
 	                        <%= sub.description %><br/>
-	                        <%= sub.subscribe_date %><br/>
+	                        <%= sub.subscribe_date.localtime %><br/>
 	                    </div>
 	                </div>
 	                <div class="clear"></div>
