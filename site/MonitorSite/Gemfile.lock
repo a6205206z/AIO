@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: https://ruby.taobao.org/
   specs:
     actionmailer (4.2.3)
       actionpack (= 4.2.3)
@@ -164,7 +164,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   mongo_mapper
-  mysql2
+  mysql2 (~> 0.3.18)
   rails (= 4.2.3)
   responders (~> 2.0)
   sass-rails (~> 5.0)
