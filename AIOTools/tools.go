@@ -15,10 +15,14 @@ func main() {
 		os.Exit(0)
 	}
 
-	gtTime := time.Now()
+	gtTime := time.Date(year, month, day, hour, min, sec, nsec, loc)
 
 	for {
-		dataList, _ := alarm.LoadTrackingData("192.168.200.22", &gtTime)
+		dataList, err := alarm.LoadTrackingData("121.41.0.138", &gtTime)
+		if err != nil {
+			fmt.Println(err.Error())
+			continue
+		}
 		analyseResults := alarm.TrackTimeoutAnalyse(timeOut, dataList)
 
 		for k, _ := range analyseResults {
@@ -26,7 +30,7 @@ func main() {
 		}
 
 		fmt.Printf("------------------%s----------------------\n", gtTime.String())
-		time.Sleep(time.Second * 10)
+		time.Sleep(time.Minute)
 	}
 
 }

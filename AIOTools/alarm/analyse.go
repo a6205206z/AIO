@@ -9,14 +9,14 @@ func TrackTimeoutAnalyse(timeout int, trackingList []Tracking) map[string]*Analy
 	analyseResults := make(map[string]*AnalyseResult)
 
 	for i := 0; i < len(trackingList); i++ {
-		appname := trackingList[i].Appname
+		analyseKey := trackingList[i].Appname + "-" + trackingList[i].Url
 		if timeout < trackingList[i].Usetime {
-			if analyseResults[appname] == nil {
-				analyseResults[appname] = new(AnalyseResult)
+			if analyseResults[analyseKey] == nil {
+				analyseResults[analyseKey] = new(AnalyseResult)
 			}
-			analyseResults[appname].Count++
-			if analyseResults[appname].MaxUseTime < trackingList[i].Usetime {
-				analyseResults[appname].MaxUseTime = trackingList[i].Usetime
+			analyseResults[analyseKey].Count++
+			if analyseResults[analyseKey].MaxUseTime < trackingList[i].Usetime {
+				analyseResults[analyseKey].MaxUseTime = trackingList[i].Usetime
 			}
 		}
 	}

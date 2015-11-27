@@ -44,7 +44,7 @@ func LoadTrackingData(url string, gtTime *time.Time) ([]Tracking, error) {
 func loadTrackingDataByTime(collection *mgo.Collection, lastCheckTime *time.Time) []Tracking {
 
 	var results []Tracking
-	iter := collection.Find(bson.M{"appname": "uoko", "invoketime": bson.M{"$gt": lastCheckTime}}).Iter()
+	iter := collection.Find(bson.M{"invoketime": bson.M{"$gt": lastCheckTime}}).Iter()
 	defer iter.Close()
 
 	tracking := new(Tracking)
