@@ -13,10 +13,10 @@ ngx_esb_cal_occupy(struct ngx_esb_occupy *o, struct ngx_esb_occupy *n)
 	double							g_cpu_used;
 	double							od, nd;   
 	double							id, sd;  
-	double							scale;   
+	//double							scale;   
 	od = (double) (o->user + o->nice + o->system +o->idle);
 	nd = (double) (n->user + n->nice + n->system +n->idle);
-	scale = 100.0 / (float)(nd-od);      
+	//scale = 100.0 / (float)(nd-od);      
 	id = (double) (n->user - o->user);  
 	sd = (double) (n->system - o->system);
 	g_cpu_used = ((sd+id)*100.0)/(nd-od);
