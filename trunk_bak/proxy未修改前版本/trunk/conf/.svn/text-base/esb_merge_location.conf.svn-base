@@ -1,6 +1,0 @@
-location ^~/esbmerge_qEV3Ib
-{
-proxy_pass http://esbsds.vancldb.com/D/NewAssessServiceSubCustWS;
-subs_filter_types text/xml;
-subs_filter http://esbsds.vancldb.com/D/ http://$host/;
-}
