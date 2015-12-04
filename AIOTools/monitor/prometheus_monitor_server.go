@@ -9,8 +9,6 @@ import (
 	"time"
 )
 
-//var addr = flag.String("listen-address", ":8888", "The address to listen on for HTTP requests.")
-
 var (
 	serviceTimeoutCountCollector = prometheus.NewCounterVec(
 		prometheus.CounterOpts{
@@ -20,17 +18,6 @@ var (
 		[]string{"service_name"},
 	)
 
-	/*
-		serviceMaxUseTimeCollector = prometheus.NewHistogramVec(
-			prometheus.HistogramOpts{
-				Name:    "service_max_usetime_minute",
-				Help:    "service max use time per minute.",
-				Buckets: prometheus.LinearBuckets(10, 10, 20),
-			},
-			[]string{"service_max_use_time"},
-		)
-	*/
-
 	serviceMaxUseTimeCollector = prometheus.NewGaugeVec(
 		prometheus.GaugeOpts{
 			Name: "service_max_usetime",
@@ -38,6 +25,8 @@ var (
 		},
 		[]string{"service_name"},
 	)
+
+	analyseResults = make(map[string]*alarm.AnalyseResult)
 )
 
 func init() {
@@ -51,17 +40,22 @@ func StartServer(serverHost string, dbHost string, refreshInterval int) {
 	go func() {
 		now := time.Now()
 		gtTime := time.Date(now.Year(), now.Month(), now.Day(), now.Hour(), now.Minute(), now.Second(), now.Nanosecond(), alarm.Location)
+
 		for {
+
 			dataList, err := alarm.LoadTrackingData(dbHost, &gtTime)
 			if err != nil {
 				log.Println(err)
 				continue
 			}
-			analyseResults := alarm.TrackTimeoutAnalysePerService(0, dataList)
+			alarm.TrackTimeoutAnalysePerService(0, dataList, analyseResults)
 
 			for k, _ := range analyseResults {
 				serviceTimeoutCountCollector.WithLabelValues(k).Set(float64(analyseResults[k].Count))
 				serviceMaxUseTimeCollector.WithLabelValues(k).Set(float64(analyseResults[k].MaxUseTime) / 1000)
+				//init data
+				analyseResults[k].Count = 0
+				analyseResults[k].MaxUseTime = 0
 			}
 
 			time.Sleep(time.Second * time.Duration(refreshInterval))

@@ -5,8 +5,7 @@ type AnalyseResult struct {
 	MaxUseTime int
 }
 
-func TrackTimeoutAnalysePerAPI(timeout int, trackingList []Tracking) map[string]*AnalyseResult {
-	analyseResults := make(map[string]*AnalyseResult)
+func TrackTimeoutAnalysePerAPI(timeout int, trackingList []Tracking, analyseResults map[string]*AnalyseResult) {
 
 	for i := 0; i < len(trackingList); i++ {
 		analyseKey := trackingList[i].Appname + "-" + trackingList[i].Url
@@ -20,12 +19,9 @@ func TrackTimeoutAnalysePerAPI(timeout int, trackingList []Tracking) map[string]
 			}
 		}
 	}
-
-	return analyseResults
 }
 
-func TrackTimeoutAnalysePerService(timeout int, trackingList []Tracking) map[string]*AnalyseResult {
-	analyseResults := make(map[string]*AnalyseResult)
+func TrackTimeoutAnalysePerService(timeout int, trackingList []Tracking, analyseResults map[string]*AnalyseResult) {
 
 	for i := 0; i < len(trackingList); i++ {
 		analyseKey := trackingList[i].Appname
@@ -39,6 +35,4 @@ func TrackTimeoutAnalysePerService(timeout int, trackingList []Tracking) map[str
 			}
 		}
 	}
-
-	return analyseResults
 }
