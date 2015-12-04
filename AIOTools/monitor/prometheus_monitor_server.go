@@ -1,7 +1,7 @@
 package monitor
 
 import (
-	"../alarm"
+	"../data"
 	"flag"
 	"github.com/prometheus/client_golang/prometheus"
 	"log"

@@ -56,7 +56,7 @@ func main() {
 	} else {
 		log.Fatal(`
 Useage:
-tools serverHost:port dbHost
+tools serverHost:port dbHost refreshInterval
 `)
 	}
 }
