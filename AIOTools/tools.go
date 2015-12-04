@@ -1,36 +1,49 @@
 package main
 
 import (
-	"./alarm"
-	"fmt"
+	_ "./alarm"
+	"./monitor"
+	_ "fmt"
 	"os"
-	"strconv"
-	"time"
+	_ "strconv"
+	_ "time"
 )
 
 func main() {
-	timeOut, err := strconv.Atoi(os.Args[1])
-	if err != nil {
-		fmt.Println(err.Error())
-		os.Exit(0)
-	}
-
-	gtTime := time.Date(year, month, day, hour, min, sec, nsec, loc)
-
-	for {
-		dataList, err := alarm.LoadTrackingData("121.41.0.138", &gtTime)
+	/*
+		timeOut, err := strconv.Atoi(os.Args[1])
 		if err != nil {
 			fmt.Println(err.Error())
-			continue
-		}
-		analyseResults := alarm.TrackTimeoutAnalyse(timeOut, dataList)
-
-		for k, _ := range analyseResults {
-			fmt.Printf("[%s request time out] count= %d max use time = %d\n", k, analyseResults[k].Count, analyseResults[k].MaxUseTime)
+			os.Exit(0)
 		}
 
-		fmt.Printf("------------------%s----------------------\n", gtTime.String())
-		time.Sleep(time.Minute)
-	}
+		now := time.Now()
+		gtTime := time.Date(now.Year(), now.Month(), now.Day(), now.Hour(), now.Minute(), now.Second(), now.Nanosecond(), alarm.Location)
+	*/
+	/*
+		email, err := alarm.LoadServiceRegisterUserEmail("uoko")
+		if err != nil {
+			fmt.Println(err.Error())
+		}
+		fmt.Println(email)
+	*/
+	/*
+		for {
+			dataList, err := alarm.LoadTrackingData("121.41.0.138", &gtTime)
+			if err != nil {
+				fmt.Println(err.Error())
+				continue
+			}
+			analyseResults := alarm.TrackTimeoutAnalyse(timeOut, dataList)
 
+			for k, _ := range analyseResults {
+				fmt.Printf("[%s request time out] count= %d max use time = %d\n", k, analyseResults[k].Count, analyseResults[k].MaxUseTime)
+			}
+
+			fmt.Printf("------------------%s----------------------\n", gtTime.String())
+			time.Sleep(time.Minute)
+		}
+	*/
+	dbHost := os.Args[1]
+	monitor.StartServer(dbHost)
 }
