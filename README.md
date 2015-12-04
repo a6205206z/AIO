@@ -1,21 +1,32 @@
+#Based on ![Nginx](http://nginx.org/nginx.png)
 #HOW TO INSTALL
 ##install dependencies
- #yum groupinstall "Development Tools"
- #yum -y install pcre* zlib* openssl*
+```Bash
+yum groupinstall "Development Tools"
+yum -y install pcre* zlib* openssl*
+```
 ##install mongodb driver
- #cd /AIOPath/mongo-c-driver
- #make & make install
+```Bash
+cd /AIOPath/mongo-c-driver
+make & make install
+```
 ##install aio
 ###entry sourcecode folder
- #cd /AIOPath/source
- #./esbcfg.sh
- #make & make install
- #vi/etc/ld.so.conf
+```Bash
+cd /AIOPath/source<br>
+./esbcfg.sh<br>
+make & make install<br>
+vi/etc/ld.so.conf<br>
+```
 ###add /usr/local/lib and save
- #/sbin/ldconfig
+```Bash
+/sbin/ldconfig
+```
 ###start aio
- #/usr/local/nginx/sbin/nginx
-
+```Bash
+/usr/local/nginx/sbin/nginx
+```
+***
 # AIO
 ## 2015/12/04
 add prometheus monitor data collecter
