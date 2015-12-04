@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-var addr = flag.String("listen-address", ":8080", "The address to listen on for HTTP requests.")
+var addr = flag.String("listen-address", ":8888", "The address to listen on for HTTP requests.")
 
 var (
 	serviceTimeoutCountCollector = prometheus.NewCounterVec(
