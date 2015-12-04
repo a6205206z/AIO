@@ -13,10 +13,10 @@ make & make install
 ##install aio
 ###entry sourcecode folder
 ```Bash
-cd /AIOPath/source<br>
-./esbcfg.sh<br>
-make & make install<br>
-vi/etc/ld.so.conf<br>
+cd /AIOPath/source
+./esbcfg.sh
+make & make install
+vi/etc/ld.so.conf
 ```
 ###add /usr/local/lib and save
 ```Bash
