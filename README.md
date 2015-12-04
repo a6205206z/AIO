@@ -6,14 +6,14 @@
  #cd /AIOPath/mongo-c-driver
  #make & make install
 ##install aio
-##entry sourcecode folder
+###entry sourcecode folder
  #cd /AIOPath/source
  #./esbcfg.sh
  #make & make install
  #vi/etc/ld.so.conf
-##add /usr/local/lib and save
+###add /usr/local/lib and save
  #/sbin/ldconfig
-##start aio
+###start aio
  #/usr/local/nginx/sbin/nginx
 
 # AIO
