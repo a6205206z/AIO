@@ -9,7 +9,7 @@ import (
 	"time"
 )
 
-var addr = flag.String("listen-address", ":8888", "The address to listen on for HTTP requests.")
+//var addr = flag.String("listen-address", ":8888", "The address to listen on for HTTP requests.")
 
 var (
 	serviceTimeoutCountCollector = prometheus.NewCounterVec(
@@ -45,7 +45,7 @@ func init() {
 	prometheus.MustRegister(serviceMaxUseTimeCollector)
 }
 
-func StartServer(dbHost string) {
+func StartServer(serverHost string, dbHost string, refreshInterval int) {
 	flag.Parse()
 
 	go func() {
@@ -54,7 +54,7 @@ func StartServer(dbHost string) {
 		for {
 			dataList, err := alarm.LoadTrackingData(dbHost, &gtTime)
 			if err != nil {
-				log.Fatal(err)
+				log.Println(err)
 				continue
 			}
 			analyseResults := alarm.TrackTimeoutAnalysePerService(0, dataList)
@@ -63,9 +63,12 @@ func StartServer(dbHost string) {
 				serviceTimeoutCountCollector.WithLabelValues(k).Set(float64(analyseResults[k].Count))
 				serviceMaxUseTimeCollector.WithLabelValues(k).Set(float64(analyseResults[k].MaxUseTime) / 1000)
 			}
-			time.Sleep(time.Second * 5)
+
+			time.Sleep(time.Second * time.Duration(refreshInterval))
 		}
 	}()
+
+	addr := flag.String("listen-address", serverHost, "The address to listen on for HTTP requests.")
 	http.Handle("/metrics", prometheus.Handler())
 	http.ListenAndServe(*addr, nil)
 }

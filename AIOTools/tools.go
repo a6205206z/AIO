@@ -1,12 +1,10 @@
 package main
 
 import (
-	_ "./alarm"
 	"./monitor"
-	_ "fmt"
+	"log"
 	"os"
-	_ "strconv"
-	_ "time"
+	"strconv"
 )
 
 func main() {
@@ -44,6 +42,21 @@ func main() {
 			time.Sleep(time.Minute)
 		}
 	*/
-	dbHost := os.Args[1]
-	monitor.StartServer(dbHost)
+	if len(os.Args) == 4 {
+
+		refreshInterval, err := strconv.Atoi(os.Args[3])
+		if err != nil {
+			log.Fatal(err)
+			os.Exit(0)
+		}
+		serverHost := os.Args[1]
+		dbHost := os.Args[2]
+
+		monitor.StartServer(serverHost, dbHost, refreshInterval)
+	} else {
+		log.Fatal(`
+Useage:
+tools serverHost:port dbHost
+`)
+	}
 }

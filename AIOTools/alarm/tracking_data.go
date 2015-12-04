@@ -31,7 +31,14 @@ type Tracking struct {
 
 func LoadTrackingData(url string, gtTime *time.Time) ([]Tracking, error) {
 	session, err := mgo.Dial(url)
-	defer session.Close()
+	defer func() {
+		if session != nil {
+			session.Close()
+		}
+	}()
+	if err != nil {
+		return nil, err
+	}
 
 	session.SetMode(mgo.Monotonic, true)
 
@@ -45,7 +52,11 @@ func loadTrackingDataByTime(collection *mgo.Collection, lastCheckTime *time.Time
 
 	var results []Tracking
 	iter := collection.Find(bson.M{"invoketime": bson.M{"$gt": lastCheckTime}}).Iter()
-	defer iter.Close()
+	defer func() {
+		if iter != nil {
+			iter.Close()
+		}
+	}()
 
 	tracking := new(Tracking)
 	for iter.Next(tracking) {

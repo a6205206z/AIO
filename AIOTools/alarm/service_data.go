@@ -21,16 +21,25 @@ type Service struct {
 
 func LoadServiceRegisterUserEmail(appname string) (string, error) {
 	db, err := sql.Open("mysql", "root@tcp(127.0.0.1:3306)/esb_management?charset=utf8")
-	defer db.Close()
+	defer func() {
+		if db != nil {
+			db.Close()
+		}
+	}()
 
 	rows, err := db.Query("select register_user_mail_address from services where name=?", appname)
-	defer rows.Close()
+
+	defer func() {
+		if rows != nil {
+			rows.Close()
+		}
+	}()
 
 	var email string
 	for rows.Next() {
 		row_err := rows.Scan(&email)
 		if row_err != nil {
-			log.Fatal(err)
+			log.Println(err)
 		}
 	}
 
