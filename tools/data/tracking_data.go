@@ -1,4 +1,4 @@
-package alarm
+package data
 
 import (
 	"gopkg.in/mgo.v2"

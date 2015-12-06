@@ -1,4 +1,4 @@
-package alarm
+package data
 
 type AnalyseResult struct {
 	Count      int

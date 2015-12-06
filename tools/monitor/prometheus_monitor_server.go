@@ -26,12 +26,31 @@ var (
 		[]string{"service_name"},
 	)
 
-	analyseResults = make(map[string]*alarm.AnalyseResult)
+	apiTimeoutCountCollector = prometheus.NewCounterVec(
+		prometheus.CounterOpts{
+			Name: "api_timeout_counter",
+			Help: "api timeout counter.",
+		},
+		[]string{"api_name"},
+	)
+
+	apiMaxUseTimeCollector = prometheus.NewGaugeVec(
+		prometheus.GaugeOpts{
+			Name: "api_max_usetime",
+			Help: "api max use time.",
+		},
+		[]string{"api_name"},
+	)
+
+	serviceAnalyseResults = make(map[string]*data.AnalyseResult)
+	apiAnalyseResults     = make(map[string]*data.AnalyseResult)
 )
 
 func init() {
 	prometheus.MustRegister(serviceTimeoutCountCollector)
 	prometheus.MustRegister(serviceMaxUseTimeCollector)
+	//prometheus.MustRegister(apiTimeoutCountCollector)
+	//prometheus.MustRegister(apiMaxUseTimeCollector)
 }
 
 func StartServer(serverHost string, dbHost string, refreshInterval int) {
@@ -39,25 +58,35 @@ func StartServer(serverHost string, dbHost string, refreshInterval int) {
 
 	go func() {
 		now := time.Now()
-		gtTime := time.Date(now.Year(), now.Month(), now.Day(), now.Hour(), now.Minute(), now.Second(), now.Nanosecond(), alarm.Location)
+		gtTime := time.Date(now.Year(), now.Month(), now.Day(), now.Hour(), now.Minute(), now.Second(), now.Nanosecond(), data.Location)
 
 		for {
 
-			dataList, err := alarm.LoadTrackingData(dbHost, &gtTime)
+			dataList, err := data.LoadTrackingData(dbHost, &gtTime)
 			if err != nil {
 				log.Println(err)
 				continue
 			}
-			alarm.TrackTimeoutAnalysePerService(0, dataList, analyseResults)
+			data.TrackTimeoutAnalysePerService(0, dataList, serviceAnalyseResults)
 
-			for k, _ := range analyseResults {
-				serviceTimeoutCountCollector.WithLabelValues(k).Set(float64(analyseResults[k].Count))
-				serviceMaxUseTimeCollector.WithLabelValues(k).Set(float64(analyseResults[k].MaxUseTime) / 1000)
+			for k, _ := range serviceAnalyseResults {
+				serviceTimeoutCountCollector.WithLabelValues(k).Set(float64(serviceAnalyseResults[k].Count))
+				serviceMaxUseTimeCollector.WithLabelValues(k).Set(float64(serviceAnalyseResults[k].MaxUseTime) / 1000)
 				//init data
-				analyseResults[k].Count = 0
-				analyseResults[k].MaxUseTime = 0
+				serviceAnalyseResults[k].Count = 0
+				serviceAnalyseResults[k].MaxUseTime = 0
 			}
+			/*
+				data.TrackTimeoutAnalysePerAPI(0, dataList, apiAnalyseResults)
 
+				for k, _ := range apiAnalyseResults {
+					apiTimeoutCountCollector.WithLabelValues(k).Set(float64(apiAnalyseResults[k].Count))
+					apiMaxUseTimeCollector.WithLabelValues(k).Set(float64(apiAnalyseResults[k].MaxUseTime) / 1000)
+					//init data
+					apiAnalyseResults[k].Count = 0
+					apiAnalyseResults[k].MaxUseTime = 0
+				}
+			*/
 			time.Sleep(time.Second * time.Duration(refreshInterval))
 		}
 	}()

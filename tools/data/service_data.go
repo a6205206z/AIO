@@ -1,4 +1,4 @@
-package alarm
+package data
 
 import (
 	"database/sql"
