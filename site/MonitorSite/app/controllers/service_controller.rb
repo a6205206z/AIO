@@ -23,6 +23,6 @@ class ServiceController < ApplicationController
 
 	private
 	def service_params  
-		params.require(:service).permit(:id, :real_address, :esb_address, :name, :register_user_mail_address, :environment, :major_version, :minor_version, :description)
+		params.require(:service).permit(:id, :real_address, :esb_address, :name, :register_user_mail_address, :environment, :major_version, :minor_version, :description, :prometheus_counter_url, :prometheus_maxusetime_url)
     end  
 end

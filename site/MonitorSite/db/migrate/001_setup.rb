@@ -18,6 +18,8 @@ class Setup < ActiveRecord::Migration
 			t.column :environment, :string, :default => "production" ,:null => false
 			t.column :major_version, :integer, :default => 0, :null => false
 			t.column :minor_version, :integer, :default => 0, :null => false
+			t.column :prometheus_maxusetime_url, :string, :default => "", :null => false
+			t.column :prometheus_counter_url, :string, :default => "", :null => false
 		end
 
 		create_table :subscription_infos do |t|

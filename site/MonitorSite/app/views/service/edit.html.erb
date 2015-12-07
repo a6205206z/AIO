@@ -16,6 +16,10 @@
 
 		                	<h5>Service ESB Name :</h5>
 		                	<%= form.text_field :name, :id => "name", :style => "outline: medium none;", :placeholder => "Type service esb name here", :hidefocus => "true" %>
+		                	<h5>Prometheus Counter Monitor :</h5>
+		                	<%= form.text_field :prometheus_counter_url, :id => "prometheus_counter_url", :style => "outline: medium none;", :placeholder => "Type Prometheus Counter Monitor url here", :hidefocus => "true" %>
+		                	<h5>Prometheus Max Usetime Monitor :</h5>
+		                	<%= form.text_field :prometheus_maxusetime_url, :id => "prometheus_maxusetime_url", :style => "outline: medium none;", :placeholder => "Type Prometheus Max Usetime Monitor url here", :hidefocus => "true" %>
 		                	<h5>Your or Your group's Email address :</h5>
 		                	<%= form.text_field :register_user_mail_address, :id => "register_user_mail_address", :style => "outline: medium none;", :placeholder => "Type email address here", :hidefocus => "true" %>
 		                	<h5>Environment which this service run and  version:</h5>
