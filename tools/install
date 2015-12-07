@@ -1,0 +1,3 @@
+yum install daemonize
+go build tools.go /usr/bin/tools
+daemonize -p /var/run/tools.pid -l /var/lock/subsys/tools -u nobody /usr/bin/tools
