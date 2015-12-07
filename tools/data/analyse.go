@@ -8,7 +8,7 @@ type AnalyseResult struct {
 func TrackTimeoutAnalysePerAPI(timeout int, trackingList []Tracking, analyseResults map[string]*AnalyseResult) {
 
 	for i := 0; i < len(trackingList); i++ {
-		analyseKey := trackingList[i].Appname + "-" + trackingList[i].Url
+		analyseKey := trackingList[i].Appname + "-" + trackingList[i].Location
 		if timeout < trackingList[i].Usetime {
 			if analyseResults[analyseKey] == nil {
 				analyseResults[analyseKey] = new(AnalyseResult)

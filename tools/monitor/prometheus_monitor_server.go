@@ -88,6 +88,7 @@ func StartServer(serverHost string, dbHost string, refreshInterval int) {
 				}
 			*/
 			time.Sleep(time.Second * time.Duration(refreshInterval))
+
 		}
 	}()
 
