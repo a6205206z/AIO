@@ -6,51 +6,42 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"log"
 	"net/http"
+	"strconv"
 	"time"
 )
 
 var (
-	serviceTimeoutCountCollector = prometheus.NewCounterVec(
+	serviceReqCountCollector = prometheus.NewCounterVec(
 		prometheus.CounterOpts{
-			Name: "service_timeout_counter",
-			Help: "service timeout counter.",
+			Name: "service_req_counter",
+			Help: "service request details counter.",
 		},
-		[]string{"service_name"},
+		[]string{"service_name", "status_code", "client_ip", "url"},
 	)
 
-	serviceMaxUseTimeCollector = prometheus.NewGaugeVec(
-		prometheus.GaugeOpts{
-			Name: "service_max_usetime",
-			Help: "service max use time.",
-		},
-		[]string{"service_name"},
-	)
-
-	apiTimeoutCountCollector = prometheus.NewCounterVec(
+	serviceReqAvgUseTime = prometheus.NewCounterVec(
 		prometheus.CounterOpts{
-			Name: "api_timeout_counter",
-			Help: "api timeout counter.",
+			Name: "service_avg_use_time",
+			Help: "service avg use time",
 		},
-		[]string{"api_name"},
+		[]string{"service_name", "status_code", "client_ip", "url"},
 	)
 
-	apiMaxUseTimeCollector = prometheus.NewGaugeVec(
-		prometheus.GaugeOpts{
-			Name: "api_max_usetime",
-			Help: "api max use time.",
+	serviceMaxUseTime = prometheus.NewCounterVec(
+		prometheus.CounterOpts{
+			Name: "service_max_use_time",
+			Help: "service max use time",
 		},
-		[]string{"api_name"},
+		[]string{"service_name", "status_code", "client_ip", "url"},
 	)
 
 	serviceAnalyseResults = make(map[string]*data.AnalyseResult)
-	apiAnalyseResults     = make(map[string]*data.AnalyseResult)
 )
 
 func init() {
-	prometheus.MustRegister(serviceTimeoutCountCollector)
-	prometheus.MustRegister(serviceMaxUseTimeCollector)
-	//prometheus.MustRegister(apiTimeoutCountCollector)
-	//prometheus.MustRegister(apiMaxUseTimeCollector)
+	prometheus.MustRegister(serviceReqCountCollector)
+	prometheus.MustRegister(serviceReqAvgUseTime)
+	prometheus.MustRegister(serviceMaxUseTime)
 }
 
 func StartServer(serverHost string, dbHost string, refreshInterval int) {
@@ -67,26 +58,36 @@ func StartServer(serverHost string, dbHost string, refreshInterval int) {
 				log.Println(err)
 				continue
 			}
-			data.TrackTimeoutAnalysePerService(0, dataList, serviceAnalyseResults)
+			data.TrackAnalysePerService(0, dataList, serviceAnalyseResults)
 
 			for k, _ := range serviceAnalyseResults {
-				serviceTimeoutCountCollector.WithLabelValues(k).Set(float64(serviceAnalyseResults[k].Count))
-				serviceMaxUseTimeCollector.WithLabelValues(k).Set(float64(serviceAnalyseResults[k].MaxUseTime) / 1000)
+
+				serviceReqCountCollector.WithLabelValues(
+					serviceAnalyseResults[k].ServiceName,
+					strconv.Itoa(serviceAnalyseResults[k].StatusCode),
+					serviceAnalyseResults[k].ClientIP,
+					serviceAnalyseResults[k].URL,
+				).Set(float64(serviceAnalyseResults[k].Count))
+
+				serviceReqAvgUseTime.WithLabelValues(
+					serviceAnalyseResults[k].ServiceName,
+					strconv.Itoa(serviceAnalyseResults[k].StatusCode),
+					serviceAnalyseResults[k].ClientIP,
+					serviceAnalyseResults[k].URL,
+				).Set(float64(serviceAnalyseResults[k].AvgUsseTime))
+
+				serviceMaxUseTime.WithLabelValues(
+					serviceAnalyseResults[k].ServiceName,
+					strconv.Itoa(serviceAnalyseResults[k].StatusCode),
+					serviceAnalyseResults[k].ClientIP,
+					serviceAnalyseResults[k].URL,
+				).Set(float64(serviceAnalyseResults[k].MaxUseTime))
+
 				//init data
 				serviceAnalyseResults[k].Count = 0
+				serviceAnalyseResults[k].AvgUsseTime = 0
 				serviceAnalyseResults[k].MaxUseTime = 0
 			}
-			/*
-				data.TrackTimeoutAnalysePerAPI(0, dataList, apiAnalyseResults)
-
-				for k, _ := range apiAnalyseResults {
-					apiTimeoutCountCollector.WithLabelValues(k).Set(float64(apiAnalyseResults[k].Count))
-					apiMaxUseTimeCollector.WithLabelValues(k).Set(float64(apiAnalyseResults[k].MaxUseTime) / 1000)
-					//init data
-					apiAnalyseResults[k].Count = 0
-					apiAnalyseResults[k].MaxUseTime = 0
-				}
-			*/
 			time.Sleep(time.Second * time.Duration(refreshInterval))
 
 		}

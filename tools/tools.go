@@ -51,7 +51,6 @@ func main() {
 		}
 		serverHost := os.Args[1]
 		dbHost := os.Args[2]
-
 		monitor.StartServer(serverHost, dbHost, refreshInterval)
 	} else {
 		log.Fatal(`
