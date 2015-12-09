@@ -3,6 +3,7 @@ package data
 import (
 	"gopkg.in/mgo.v2"
 	"gopkg.in/mgo.v2/bson"
+	"net/url"
 	"time"
 )
 
@@ -60,6 +61,10 @@ func loadTrackingDataByTime(collection *mgo.Collection, lastCheckTime *time.Time
 
 	tracking := new(Tracking)
 	for iter.Next(tracking) {
+		l, err := url.ParseQuery(tracking.Url)
+		if err == nil {
+			tracking.Url = l.Encode()
+		}
 		results = append(results, *tracking)
 		*lastCheckTime = tracking.Invoketime
 	}

@@ -4,8 +4,6 @@ import (
 	"crypto/sha1"
 	"fmt"
 	"io"
-	"log"
-	"net/url"
 )
 
 type AnalyseResult struct {
@@ -15,7 +13,7 @@ type AnalyseResult struct {
 	URL         string
 	Count       int
 	MaxUseTime  int
-	AvgUsseTime int
+	AvgUseTime  int
 }
 
 func TrackAnalysePerService(timeout int, trackingList []Tracking, analyseResults map[string]*AnalyseResult) {
@@ -27,13 +25,7 @@ func TrackAnalysePerService(timeout int, trackingList []Tracking, analyseResults
 				analyseResults[analyseKey].ServiceName = trackingList[i].Appname
 				analyseResults[analyseKey].StatusCode = trackingList[i].Statuscode
 				analyseResults[analyseKey].ClientIP = trackingList[i].Realclientip
-				l, err := url.ParseQuery(trackingList[i].Url)
-				if err != nil {
-					log.Println(err)
-					analyseResults[analyseKey].URL = trackingList[i].Url
-				} else {
-					analyseResults[analyseKey].URL = l.Encode()
-				}
+				analyseResults[analyseKey].URL = trackingList[i].Url
 			}
 
 			analyseResults[analyseKey].Count++
@@ -41,7 +33,7 @@ func TrackAnalysePerService(timeout int, trackingList []Tracking, analyseResults
 				analyseResults[analyseKey].MaxUseTime = trackingList[i].Usetime
 			}
 			if trackingList[i].Usetime > 0 {
-				analyseResults[analyseKey].AvgUsseTime = (trackingList[i].Usetime + analyseResults[analyseKey].AvgUsseTime) / 2
+				analyseResults[analyseKey].AvgUseTime = (trackingList[i].Usetime + analyseResults[analyseKey].AvgUseTime) / 2
 			}
 		}
 	}

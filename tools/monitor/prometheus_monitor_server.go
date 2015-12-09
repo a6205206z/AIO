@@ -35,6 +35,15 @@ var (
 		[]string{"service_name", "status_code", "client_ip", "url"},
 	)
 
+	serviceUseTimeDistributions = prometheus.NewHistogramVec(
+		prometheus.HistogramOpts{
+			Name:    "service_use_time_distributions",
+			Help:    "service use time distributions",
+			Buckets: prometheus.LinearBuckets(0, 100000, 11),
+		},
+		[]string{"service_name", "status_code"},
+	)
+
 	serviceAnalyseResults = make(map[string]*data.AnalyseResult)
 )
 
@@ -42,6 +51,15 @@ func init() {
 	prometheus.MustRegister(serviceReqCountCollector)
 	prometheus.MustRegister(serviceReqAvgUseTime)
 	prometheus.MustRegister(serviceMaxUseTime)
+	prometheus.MustRegister(serviceUseTimeDistributions)
+}
+
+func resetCollector() {
+	//init collector
+	serviceReqCountCollector.Reset()
+	serviceReqAvgUseTime.Reset()
+	serviceMaxUseTime.Reset()
+	serviceUseTimeDistributions.Reset()
 }
 
 func StartServer(serverHost string, dbHost string, refreshInterval int) {
@@ -52,12 +70,19 @@ func StartServer(serverHost string, dbHost string, refreshInterval int) {
 		gtTime := time.Date(now.Year(), now.Month(), now.Day(), now.Hour(), now.Minute(), now.Second(), now.Nanosecond(), data.Location)
 
 		for {
-
+			resetCollector()
 			dataList, err := data.LoadTrackingData(dbHost, &gtTime)
 			if err != nil {
 				log.Println(err)
 				continue
 			}
+			for i := 0; i < len(dataList); i++ {
+				serviceUseTimeDistributions.WithLabelValues(
+					dataList[i].Appname,
+					strconv.Itoa(dataList[i].Statuscode),
+				).Observe(float64(dataList[i].Usetime))
+			}
+
 			data.TrackAnalysePerService(0, dataList, serviceAnalyseResults)
 
 			for k, _ := range serviceAnalyseResults {
@@ -74,7 +99,7 @@ func StartServer(serverHost string, dbHost string, refreshInterval int) {
 					strconv.Itoa(serviceAnalyseResults[k].StatusCode),
 					serviceAnalyseResults[k].ClientIP,
 					serviceAnalyseResults[k].URL,
-				).Set(float64(serviceAnalyseResults[k].AvgUsseTime))
+				).Set(float64(serviceAnalyseResults[k].AvgUseTime))
 
 				serviceMaxUseTime.WithLabelValues(
 					serviceAnalyseResults[k].ServiceName,
@@ -85,11 +110,10 @@ func StartServer(serverHost string, dbHost string, refreshInterval int) {
 
 				//init data
 				serviceAnalyseResults[k].Count = 0
-				serviceAnalyseResults[k].AvgUsseTime = 0
+				serviceAnalyseResults[k].AvgUseTime = 0
 				serviceAnalyseResults[k].MaxUseTime = 0
 			}
 			time.Sleep(time.Second * time.Duration(refreshInterval))
-
 		}
 	}()
 
