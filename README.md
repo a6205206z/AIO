@@ -28,6 +28,9 @@ vi /etc/ld.so.conf
 /usr/local/nginx/sbin/nginx
 ```
 ***
+
 # AIO
+
+![Architecture](https://github.com/a6205206z/AIO/blob/master/architecture.jpg)
 ## 2015/12/04
 add prometheus monitor data collecter
