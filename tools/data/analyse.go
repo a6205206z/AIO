@@ -10,7 +10,6 @@ type AnalyseResult struct {
 	ServiceName string
 	StatusCode  int
 	ClientIP    string
-	URL         string
 	Count       int
 	MaxUseTime  int
 	AvgUseTime  int
@@ -18,14 +17,13 @@ type AnalyseResult struct {
 
 func TrackAnalysePerService(timeout int, trackingList []Tracking, analyseResults map[string]*AnalyseResult) {
 	for i := 0; i < len(trackingList); i++ {
-		analyseKey := hash(fmt.Sprintf("%s%d%s%s", trackingList[i].Appname, trackingList[i].Statuscode, trackingList[i].Realclientip, trackingList[i].Url))
+		analyseKey := hash(fmt.Sprintf("%s%d%s%s", trackingList[i].Appname, trackingList[i].Statuscode, trackingList[i].Realclientip))
 		if timeout < trackingList[i].Usetime {
 			if analyseResults[analyseKey] == nil {
 				analyseResults[analyseKey] = new(AnalyseResult)
 				analyseResults[analyseKey].ServiceName = trackingList[i].Appname
 				analyseResults[analyseKey].StatusCode = trackingList[i].Statuscode
 				analyseResults[analyseKey].ClientIP = trackingList[i].Realclientip
-				analyseResults[analyseKey].URL = trackingList[i].Url
 			}
 
 			analyseResults[analyseKey].Count++

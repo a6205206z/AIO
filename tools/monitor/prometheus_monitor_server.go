@@ -16,7 +16,7 @@ var (
 			Name: "service_req_counter",
 			Help: "service request details counter.",
 		},
-		[]string{"service_name", "status_code", "client_ip", "url"},
+		[]string{"service_name", "status_code", "client_ip"},
 	)
 
 	serviceReqAvgUseTime = prometheus.NewCounterVec(
@@ -24,7 +24,7 @@ var (
 			Name: "service_avg_use_time",
 			Help: "service avg use time",
 		},
-		[]string{"service_name", "status_code", "client_ip", "url"},
+		[]string{"service_name", "status_code", "client_ip"},
 	)
 
 	serviceMaxUseTime = prometheus.NewCounterVec(
@@ -32,7 +32,7 @@ var (
 			Name: "service_max_use_time",
 			Help: "service max use time",
 		},
-		[]string{"service_name", "status_code", "client_ip", "url"},
+		[]string{"service_name", "status_code", "client_ip"},
 	)
 
 	serviceUseTimeDistributions = prometheus.NewHistogramVec(
@@ -91,21 +91,18 @@ func StartServer(serverHost string, dbHost string, refreshInterval int) {
 					serviceAnalyseResults[k].ServiceName,
 					strconv.Itoa(serviceAnalyseResults[k].StatusCode),
 					serviceAnalyseResults[k].ClientIP,
-					serviceAnalyseResults[k].URL,
 				).Set(float64(serviceAnalyseResults[k].Count))
 
 				serviceReqAvgUseTime.WithLabelValues(
 					serviceAnalyseResults[k].ServiceName,
 					strconv.Itoa(serviceAnalyseResults[k].StatusCode),
 					serviceAnalyseResults[k].ClientIP,
-					serviceAnalyseResults[k].URL,
 				).Set(float64(serviceAnalyseResults[k].AvgUseTime))
 
 				serviceMaxUseTime.WithLabelValues(
 					serviceAnalyseResults[k].ServiceName,
 					strconv.Itoa(serviceAnalyseResults[k].StatusCode),
 					serviceAnalyseResults[k].ClientIP,
-					serviceAnalyseResults[k].URL,
 				).Set(float64(serviceAnalyseResults[k].MaxUseTime))
 
 				//init data
