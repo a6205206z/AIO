@@ -141,7 +141,7 @@ ngx_int_t ngx_http_aio_log_header_filter(ngx_http_request_t *r)
 static 
 ngx_int_t ngx_http_aio_log_body_filter(ngx_http_request_t *r,ngx_chain_t *in)
 {
-    ngx_http_vesb_aio_log_main_conf_t				*valcf;
+  ngx_http_vesb_aio_log_main_conf_t				*valcf;
 	ngx_http_vesb_aio_log_loc_conf_t				*vallcf;
 	int												timeuse;
 	struct timeval									endinvoketime;
@@ -154,7 +154,7 @@ ngx_int_t ngx_http_aio_log_body_filter(ngx_http_request_t *r,ngx_chain_t *in)
     + endinvoketime.tv_usec - r->esb_start_process_time.tv_usec;
     
     
-    if(valcf->mongodb_enable > 0)
+  if(valcf->mongodb_enable > 0)
 	{
 		ngx_wirte_log_into_mongodb(r,valcf,vallcf,timeuse);
 	}
@@ -222,7 +222,7 @@ ngx_http_mongodb_set_conn(ngx_conf_t *cf,ngx_command_t *cmd, void *conf)
 	mongo							  conn[1];
 	ngx_str_t                         *value;
 	char                              *conn_str;
-    int                               port,status;
+  int                               port,status;
 
 	
 	value = cf->args->elts;
@@ -291,9 +291,9 @@ ngx_wirte_log_into_mongodb(ngx_http_request_t *r,
   char                      *conn_str;
   int                       port,status,insertstatus;
   time_t                    timenow;
-  ngx_list_part_t 		    *part = &r->headers_in.headers.part;
-  ngx_table_elt_t 		    *header = part->elts;
-  ngx_uint_t				i;
+  ngx_list_part_t 		      *part = &r->headers_in.headers.part;
+  ngx_table_elt_t 		      *header = part->elts;
+  ngx_uint_t				        i;
 
   conn_str = (char *)valcf->mongodb_conn_str.data;
   port = (int)valcf->mongodb_conn_port;
@@ -326,6 +326,8 @@ ngx_wirte_log_into_mongodb(ngx_http_request_t *r,
 
 		 bson_append_int( b,"statuscode",r->headers_out.status);
 		 bson_append_int( b,"usetime",timeuse);
+     bson_append_int( b,"requestsize",r.request_length);
+     bson_append_int( b,"responsesize",r->headers_out.content_length_n);
 		 bson_append_time_t( b,"invoketime",timenow );
 
 		 
@@ -341,7 +343,7 @@ ngx_wirte_log_into_mongodb(ngx_http_request_t *r,
 		 request_body = ngx_http_proxy_read_request_body(r);
 		 
 
-	     if(request_body != NULL)
+	   if(request_body != NULL)
 		 {
 			bson_append_string( b, "requestbody", (char *)request_body);
 		 }
@@ -356,51 +358,51 @@ ngx_wirte_log_into_mongodb(ngx_http_request_t *r,
 			 }
 		 }
 		 
-          /*get method name*/
-          for(i=0;/* void */;++i)
+      /*get method name*/
+      for(i=0;/* void */;++i)
+      {
+          if(i >= part->nelts)
           {
-              if(i >= part->nelts)
+              if(part->next == NULL)
               {
-                  if(part->next == NULL)
-                  {
-                      break;
-                  }
-                  
-                  part = part->next;
-                  header = part->elts;
-                  i=0;
+                  break;
               }
               
-              if(header[i].hash == 0)
-              {
-                  continue;
-              }
-              
-              if(ngx_strstr(header[i].key.data,"SOAPAction") != NULL)
-              {
-                  bson_append_string_n( b,"SOAPAction",(char *)header[i].value.data,header[i].value.len);
-              }
-              else if(ngx_strstr(header[i].key.data,"Content-Type") != NULL)
-              {
-                  bson_append_string_n( b,"Content-Type",(char *)header[i].value.data,header[i].value.len);
-              }
+              part = part->next;
+              header = part->elts;
+              i=0;
           }
+          
+          if(header[i].hash == 0)
+          {
+              continue;
+          }
+          
+          if(ngx_strstr(header[i].key.data,"SOAPAction") != NULL)
+          {
+              bson_append_string_n( b,"SOAPAction",(char *)header[i].value.data,header[i].value.len);
+          }
+          else if(ngx_strstr(header[i].key.data,"Content-Type") != NULL)
+          {
+              bson_append_string_n( b,"Content-Type",(char *)header[i].value.data,header[i].value.len);
+          }
+      }
 		
 
 		 bson_finish( b );
 		 insertstatus = mongo_insert( conn,"vesb.tracking", b , NULL );
 		 
 		 if( insertstatus != MONGO_OK ) {
-			ngx_log_error(NGX_LOG_NOTICE, r->connection->log, 0, "insert request log in mongodb is failed!(error:%d)",conn[0].err);
-		 }
-		 bson_destroy( b );
-	  }
-	  else
-	  {
-		  ngx_log_error(NGX_LOG_NOTICE, r->connection->log, 0, "mongodb is unconnection!(error:%d)",status);
-	  }
+  			ngx_log_error(NGX_LOG_NOTICE, r->connection->log, 0, "insert request log in mongodb is failed!(error:%d)",conn[0].err);
+  		 }
+  		 bson_destroy( b );
+  	  }
+  	  else
+  	  {
+  		  ngx_log_error(NGX_LOG_NOTICE, r->connection->log, 0, "mongodb is unconnection!(error:%d)",status);
+  	  }
 
-	  mongo_destroy( conn );
+	   mongo_destroy( conn );
   }
 }
 
@@ -412,9 +414,9 @@ ngx_wirte_tracking_into_mongodb(ngx_http_request_t *r,
     char                      *conn_str;
     int                       port,status,insertstatus;
     time_t                    timenow;
-    ngx_list_part_t 		  *part = &r->headers_in.headers.part;
-	ngx_table_elt_t 		  *header = part->elts;
-    ngx_uint_t				  i;
+    ngx_list_part_t 		      *part = &r->headers_in.headers.part;
+	  ngx_table_elt_t 		      *header = part->elts;
+    ngx_uint_t				        i;
     
     if(r->headers_out.status == NGX_HTTP_OK)
     {
@@ -439,6 +441,8 @@ ngx_wirte_tracking_into_mongodb(ngx_http_request_t *r,
             
             bson_append_int( b,"statuscode",r->headers_out.status);
             bson_append_int( b,"usetime",timeuse);
+            bson_append_int( b,"requestsize",r.request_length);
+            bson_append_int( b,"responsesize",r->headers_out.content_length_n);
             bson_append_time_t( b,"invoketime",timenow );
             
             
@@ -573,14 +577,14 @@ static u_char *
 ngx_http_proxy_read_request_body(ngx_http_request_t *r)
 {
 	ngx_http_request_body_t            *rb;
-    u_char                             *post_content = NULL;
+  u_char                             *post_content = NULL;
     
 	if (r->request_body != NULL
 		&& r->request_body->buf != NULL) { 
 		rb = r->request_body; 
 
 
-	    post_content = ngx_palloc(r->pool, rb->buf->last-rb->buf->pos + 2);
+	  post_content = ngx_palloc(r->pool, rb->buf->last-rb->buf->pos + 2);
 		ngx_cpystrn(post_content, rb->buf->pos, rb->buf->last-rb->buf->pos + 1);
 	}
 		
