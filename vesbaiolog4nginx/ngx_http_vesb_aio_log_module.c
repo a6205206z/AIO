@@ -326,8 +326,8 @@ ngx_wirte_log_into_mongodb(ngx_http_request_t *r,
 
 		 bson_append_int( b,"statuscode",r->headers_out.status);
 		 bson_append_int( b,"usetime",timeuse);
-     bson_append_int( b,"requestsize",r.request_length);
-     bson_append_int( b,"responsesize",r->headers_out.content_length_n);
+     bson_append_long( b,"requestsize",r->request_length);
+     bson_append_long( b,"responsesize",r->headers_out.content_length_n);
 		 bson_append_time_t( b,"invoketime",timenow );
 
 		 
@@ -441,8 +441,8 @@ ngx_wirte_tracking_into_mongodb(ngx_http_request_t *r,
             
             bson_append_int( b,"statuscode",r->headers_out.status);
             bson_append_int( b,"usetime",timeuse);
-            bson_append_int( b,"requestsize",r.request_length);
-            bson_append_int( b,"responsesize",r->headers_out.content_length_n);
+            bson_append_long( b,"requestsize",r->request_length);
+            bson_append_long( b,"responsesize",r->headers_out.content_length_n);
             bson_append_time_t( b,"invoketime",timenow );
             
             
