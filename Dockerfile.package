@@ -1,0 +1,6 @@
+FROM centos:6.5
+MAINTAINER Cean Cheng <cean.ch@gmail.com>
+
+EXPOSE 3000
+
+CMD [ "application"]
