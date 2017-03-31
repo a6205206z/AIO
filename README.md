@@ -2,21 +2,21 @@
 
 # HOW TO INSTALL
 
-##install dependencies
+## install dependencies
 
 ```Bash
 yum groupinstall "Development Tools"
 yum -y install pcre* zlib* openssl*
 ```
-##install mongodb driver
+## install mongodb driver
 
 ```Bash
 cd /AIOPath/mongo-c-driver
 make & make install
 ```
-##install aio
+## install aio
 
-###entry sourcecode folder
+### entry sourcecode folder
 
 ```Bash
 chmod 755 -R /AIOPath
@@ -25,12 +25,12 @@ cd /AIOPath/source
 make & make install
 vi /etc/ld.so.conf
 ```
-###add /usr/local/lib and save
+### add /usr/local/lib and save
 
 ```Bash
 /sbin/ldconfig
 ```
-###start aio
+### start aio
 
 ```Bash
 /usr/local/nginx/sbin/nginx
@@ -42,4 +42,4 @@ vi /etc/ld.so.conf
 ![Architecture](https://github.com/a6205206z/AIO/blob/master/architecture.jpg)
 ## 2015/12/04
 
-add prometheus monitor data collecter
+> add prometheus monitor data collecter
