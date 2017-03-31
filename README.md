@@ -1,6 +1,6 @@
-#Based on ![Nginx](http://nginx.org/nginx.png)
+# Based on ![Nginx](http://nginx.org/nginx.png)
 
-#HOW TO INSTALL
+# HOW TO INSTALL
 
 ##install dependencies
 
